@@ -14,11 +14,16 @@ def load_game(num_of_games):
    3. Currency Roulette - try and guess the value of a random amount of USD in ILS\n \
    4. Seven Boom \n")
 
+    game2play = ""
     game2play = input("Choose your game: ")
     num_of_games_list = createList(num_of_games)
 
-    while (int(game2play) not in num_of_games_list):
-        game2play = input("Choose your game (1-" + str(num_of_games) + "): ")
+    if (game2play.isdigit()):
+        while (int(game2play) not in num_of_games_list):
+            game2play = input("Choose your game (1-" + str(num_of_games) + "): ")
+    else:
+        print("Only numbers allowed\n")
+        game2play = load_game(num_of_games)
 
     return int(game2play)
 
