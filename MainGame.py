@@ -3,6 +3,7 @@
 
 from Live import *
 from GuessGame import *
+from SevenBoom import seven_boom
 
 games_name = ("Memory Game", "Guess Game", "Currency Roulette", "Seven Boom")
 num_of_difficulties = 5

@@ -1,10 +1,19 @@
 ## Moshe Barazani
 ## Date: 04-02-2020
 
-from Live import *
-n=6
+import random
 
-createList(n)
+#from Live import *
+max =101
+x = 5
+mlist = []
+
+mlist = random.sample(range(max), x)
+print(mlist)
+
+
+
+
 #
 # try:
 #     __import__(get_gamer_name())

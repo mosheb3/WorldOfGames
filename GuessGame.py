@@ -1,3 +1,5 @@
+## Moshe Barazani
+## Date: 04-02-2020
 
 def generate_number(difficulty):
     import random
