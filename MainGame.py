@@ -19,9 +19,7 @@ num_of_games_list = createList(num_of_games)
 if (which_game2play in num_of_games_list):
     if (which_game2play == 1):
         get_difficulty = get_game_difficulty(games_name[which_game2play - 1], num_of_difficulties)
-        generate_sequence(get_difficulty)
-        start_up(get_difficulty)
-        get_list_from_user()
+        play(get_difficulty)
 
     elif (which_game2play == 2):
         get_difficulty = get_game_difficulty(games_name[which_game2play-1], num_of_difficulties)
