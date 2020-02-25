@@ -42,9 +42,3 @@ def createList(listSize):
     for i in range(1, listSize+1):
         mylist.append(i)
     return mylist
-
-
-def cls():
-    print ('\n' * 25000)
-
-
