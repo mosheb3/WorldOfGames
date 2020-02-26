@@ -14,7 +14,7 @@ def start_up(difficulty):
     import time
 
     sec = difficulty
-    while( sec > 0):
+    while(sec > 0):
         print(sec)
         sec -= 1
         time.sleep(1)
@@ -23,7 +23,7 @@ def start_up(difficulty):
 
 
 def cls():
-    print ('\n' * 25000)
+    print('\n' * 25000)
 
 
 def get_list_from_user(difficulty):
@@ -45,7 +45,7 @@ def is_list_equal(gen_seq_list, gamer_num_list):
     return
 
 
-def play(difficulty):
+def play_memory_game(difficulty):
     gen_seq_list = []
     gamer_numbers = []
     print("REMEMBER")

@@ -1,7 +1,7 @@
 ## Moshe Barazani
 ## Date: 04-02-2020
 
-def seven_boom():
+def play_seven_boom():
     num = int(input("Enter Number: "))
     for x in range(num):
         x+=1
