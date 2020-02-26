@@ -9,6 +9,7 @@ def generate_sequence(difficulty):
     print(gslist)
     return gslist
 
+
 def start_up(difficulty):
     import time
 
@@ -25,22 +26,31 @@ def cls():
     print ('\n' * 25000)
 
 
-def get_list_from_user():
-    user_nums = []
+def get_list_from_user(difficulty):
+    user_nums_list = []
     print("Did u remember the numbers? ")
-    user_nums = input("Enter the number by delimiter \",\" :")
-    #print(user_nums)
-    return user_nums
+
+    for i in range(difficulty):
+        user_nums = input("Enter number {n}: ".format(n=i+1))
+        user_nums_list.append(int(user_nums))
+    #print(user_nums_list)
+    return user_nums_list
 
 
-def is_list_equal():
+def is_list_equal(gen_seq_list, gamer_num_list):
+    if (gen_seq_list == gamer_num_list):
+        print("Very Good! You'he good memory.")
+    else:
+        print("Sorry, The numbers was: {gen}".format(gen=gen_seq_list))
     return
 
 
 def play(difficulty):
-    gslist = []
+    gen_seq_list = []
+    gamer_numbers = []
     print("REMEMBER")
-    gslist = generate_sequence(difficulty)
+    gen_seq_list = generate_sequence(difficulty)
     start_up(difficulty)
-    print(get_list_from_user())
+    gamer_numbers = get_list_from_user(difficulty)
+    is_list_equal(gen_seq_list, gamer_numbers)
     return
