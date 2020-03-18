@@ -26,19 +26,14 @@ while(ynq.lower() == "y"):
 
         if (which_game2play == 1):
             play_memory_game(get_difficulty)
-
         elif (which_game2play == 2):
             computer_num = guess_num(get_difficulty)
-
         elif (which_game2play == 3):
             play_currency_roulette(get_difficulty)
-
         elif (which_game2play == 4):
             play_seven_boom()
-
         else:
             print(games_name[which_game2play-1])
-
     else:
         print("No Game Found")
 
