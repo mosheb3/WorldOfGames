@@ -18,11 +18,13 @@ while(ynq.lower() == "y"):
     which_game2play = load_game(num_of_games)
 
     num_of_games_list = createList(num_of_games)
-    get_difficulty = get_game_difficulty(games_name[which_game2play - 1], num_of_difficulties)
+#    get_difficulty = get_game_difficulty(games_name[which_game2play - 1], num_of_difficulties)
 
     if (which_game2play in num_of_games_list):
+        if (which_game2play in (1,2,3)):
+            get_difficulty = get_game_difficulty(games_name[which_game2play - 1], num_of_difficulties)
+
         if (which_game2play == 1):
-            #get_difficulty = get_game_difficulty(games_name[which_game2play - 1], num_of_difficulties)
             play_memory_game(get_difficulty)
 
         elif (which_game2play == 2):
