@@ -11,15 +11,20 @@ def writeScore2File(filename ,txtStr):
         print("cannot open file")
         exit(1)
 
+
 def createGamerScoreTeplate(gamerName, gamerScore):
+    print(gamerScore)
+
     defaultname="dGamer"
-    defaultscore="20"
+    defaultscore=0
     scoreHtml=""
 
     if (gamerName == ""):
         gamerName=defaultname
-    if (gamerScore == ""):
+    if (gamerScore == "" or gamerScore == None or gamerScore == 0):
         gamerScore=defaultscore
+
+    gamerScore = sumScore(int(gamerScore))
 
     scoreHtml = "<html> \n \
         <head> \n \
@@ -27,10 +32,16 @@ def createGamerScoreTeplate(gamerName, gamerScore):
         </head> \n \
         <body> \n \
         <h1>Hello {GAMERNAME}</h1> \n \
-        <h2>The score is <div id='score'>{SCORE}</div></h2> \n \
+        <h2>Your score is <div id='score'>{SCORE}</div></h2> \n \
         </body> \n \
         </html>\n"
     scoreHtml=scoreHtml.format(GAMERNAME=gamerName, SCORE=gamerScore)
     return scoreHtml
 
-#POINTS_OF_WINNING = (DIFFICULTY X 3) + 5
+
+def sumScore(gamerScore):
+    if (gamerScore != 2000):
+        points_of_winning = ((gamerScore*3) + 5)
+    else:
+        points_of_winning = 0
+    return points_of_winning

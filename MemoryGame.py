@@ -18,7 +18,8 @@ def start_up(difficulty):
         print(sec)
         sec -= 1
         time.sleep(1)
-    print(" GO GO GO")
+    print(" GO GO GO ")
+    time.sleep(1)
     cls()
 
 
@@ -28,7 +29,7 @@ def cls():
 
 def get_list_from_user(difficulty):
     user_nums_list = []
-    print("Did u remember the numbers? ")
+    print("Did you remember the numbers? ")
 
     for i in range(difficulty):
         user_nums = input("Enter number {n}: ".format(n=i+1))
@@ -40,9 +41,10 @@ def get_list_from_user(difficulty):
 def is_list_equal(gen_seq_list, gamer_num_list):
     if (gen_seq_list == gamer_num_list):
         print("Very Good! You'he good memory.")
+        return 1000
     else:
         print("Sorry, The numbers was: {gen}".format(gen=gen_seq_list))
-    return
+        return 2000
 
 
 def play_memory_game(difficulty):
@@ -52,5 +54,8 @@ def play_memory_game(difficulty):
     gen_seq_list = generate_sequence(difficulty)
     start_up(difficulty)
     gamer_numbers = get_list_from_user(difficulty)
-    is_list_equal(gen_seq_list, gamer_numbers)
-    return
+    winOrNot = is_list_equal(gen_seq_list, gamer_numbers)
+    if (winOrNot == 1000):
+        return difficulty
+    else:
+        return 2000

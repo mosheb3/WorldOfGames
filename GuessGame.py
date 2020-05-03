@@ -20,7 +20,8 @@ def guess_num(difficulty):
         if (computer_num == user_guess):
             print("Good, You won!")
             print("I thought also about number {cn}".format(cn=computer_num))
+            return (1,str(computer_num))
         else:
             print("Sorry, You lose!")
             print("I thought about number {cn}".format(cn=computer_num))
-        return str(computer_num)
+            return (0,str(computer_num))
