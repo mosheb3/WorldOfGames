@@ -1,5 +1,7 @@
 ## Moshe Barazani
 ## Date: 03-05-2020
+from Utils import *
+
 
 def writeScore2File(filename ,txtStr):
     fw = ""
@@ -12,7 +14,7 @@ def writeScore2File(filename ,txtStr):
         exit(1)
 
 
-def createGamerScoreTeplate(gamerName, gamerScore):
+def createGamerScoreTable(gamerName, gamerScore):
     defaultname="dGamer"
     defaultscore=0
     scoreHtml=""
@@ -38,7 +40,7 @@ def createGamerScoreTeplate(gamerName, gamerScore):
 
 
 def sumScore(gamerScore):
-    if (gamerScore != 2000):
+    if (gamerScore != LOSSING_CODE):
         points_of_winning = ((gamerScore*3) + 5)
     else:
         points_of_winning = 0

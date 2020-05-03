@@ -7,7 +7,7 @@ from GuessGame import guess_num
 from MemoryGame import play_memory_game
 from CurrencyRouletteGame import play_currency_roulette
 from SevenBoom import play_seven_boom
-from Score import writeScore2File,createGamerScoreTeplate
+from Score import writeScore2File,createGamerScoreTable
 
 games_name = ("Memory Game", "Guess Game", "Currency Roulette", "Seven Boom")
 num_of_difficulties = 5
@@ -40,7 +40,7 @@ while(ynq.lower() == "y"):
         print("No Game Found")
 
     if (which_game2play != 4):
-        scorePage = createGamerScoreTeplate(gamer_name, winOrNot)
+        scorePage = createGamerScoreTable(gamer_name, winOrNot)
         writeScore2File(SCORES_FILE_NAME, scorePage)
 
     ynq = (input("Another Game? [y/n] ")).lower()
