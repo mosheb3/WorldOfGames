@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c8c7ecd-a0b0-40b8-a87b-dc31ff3042c4" name="Default Changelist" comment="create another game question">
-      <change afterPath="$PROJECT_DIR$/flask1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4c8c7ecd-a0b0-40b8-a87b-dc31ff3042c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Score.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,28 +35,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager" selected="Python.stam">
-    <configuration name="GuessGame" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="WorldOfGames" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GuessGame.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Utils">
     <configuration name="Live" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="WorldOfGames" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,7 +57,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="MainGame (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="MainGame" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="WorldOfGames" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -101,7 +78,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="MainGame" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="WorldOfGames" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -113,7 +90,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MainGame.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="flask1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="WorldOfGames" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -145,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.stam" />
+        <item itemvalue="Python.Utils" />
         <item itemvalue="Python.MainGame" />
-        <item itemvalue="Python.GuessGame" />
-        <item itemvalue="Python.MainGame (1)" />
         <item itemvalue="Python.Live" />
+        <item itemvalue="Python.flask1" />
+        <item itemvalue="Python.stam" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584546620254</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="create another game question">
+      <created>1588501544475</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588501544475</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -237,34 +242,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="create another game question" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="627" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580830994904">
+    <state x="627" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588504303816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="627" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580830994904" />
-    <state x="637" y="101" key="CommitChangelistDialog2" timestamp="1588501463215">
+    <state x="627" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588504303816" />
+    <state x="637" y="101" key="CommitChangelistDialog2" timestamp="1588501542813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="637" y="101" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588501463215" />
-    <state width="1895" height="481" key="GridCell.Tab.0.bottom" timestamp="1588501440630">
+    <state x="637" y="101" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588501542813" />
+    <state width="1895" height="380" key="GridCell.Tab.0.bottom" timestamp="1588504343067">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1893" height="333" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583045144351" />
-    <state width="1895" height="481" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588501440630" />
-    <state width="1895" height="481" key="GridCell.Tab.0.center" timestamp="1588501440630">
+    <state width="1895" height="380" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588504343067" />
+    <state width="1895" height="380" key="GridCell.Tab.0.center" timestamp="1588504343067">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1893" height="333" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583045144351" />
-    <state width="1895" height="481" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588501440630" />
-    <state width="1895" height="481" key="GridCell.Tab.0.left" timestamp="1588501440630">
+    <state width="1895" height="380" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588504343067" />
+    <state width="1895" height="380" key="GridCell.Tab.0.left" timestamp="1588504343067">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1893" height="333" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583045144351" />
-    <state width="1895" height="481" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588501440630" />
-    <state width="1895" height="481" key="GridCell.Tab.0.right" timestamp="1588501440630">
+    <state width="1895" height="380" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588504343067" />
+    <state width="1895" height="380" key="GridCell.Tab.0.right" timestamp="1588504343067">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1893" height="333" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583045144351" />
-    <state width="1895" height="481" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588501440630" />
+    <state width="1895" height="380" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588504343067" />
     <state width="1893" height="333" key="GridCell.Tab.1.bottom" timestamp="1583045144351">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
