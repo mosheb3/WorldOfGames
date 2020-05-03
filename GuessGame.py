@@ -1,5 +1,6 @@
 ## Moshe Barazani
 ## Date: 04-02-2020
+from Utils import *
 
 def generate_number(difficulty):
     import random
@@ -20,8 +21,8 @@ def guess_num(difficulty):
         if (computer_num == user_guess):
             print("Good, You won!")
             print("I thought also about number {cn}".format(cn=computer_num))
-            return (1,str(computer_num))
+            return (WINNING_CODE,str(computer_num))
         else:
             print("Sorry, You lose!")
             print("I thought about number {cn}".format(cn=computer_num))
-            return (0,str(computer_num))
+            return (LOSSING_CODE,str(computer_num))

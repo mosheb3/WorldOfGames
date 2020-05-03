@@ -1,5 +1,7 @@
 ## Moshe Barazani
 ## Date: 25-02-2020
+from Utils import *
+
 
 def generate_sequence(difficulty):
     import random
@@ -41,10 +43,10 @@ def get_list_from_user(difficulty):
 def is_list_equal(gen_seq_list, gamer_num_list):
     if (gen_seq_list == gamer_num_list):
         print("Very Good! You'he good memory.")
-        return 1000
+        return WINNING_CODE
     else:
         print("Sorry, The numbers was: {gen}".format(gen=gen_seq_list))
-        return 2000
+        return LOSSING_CODE
 
 
 def play_memory_game(difficulty):
@@ -55,7 +57,7 @@ def play_memory_game(difficulty):
     start_up(difficulty)
     gamer_numbers = get_list_from_user(difficulty)
     winOrNot = is_list_equal(gen_seq_list, gamer_numbers)
-    if (winOrNot == 1000):
+    if (winOrNot == WINNING_CODE):
         return difficulty
     else:
-        return 2000
+        return LOSSING_CODE

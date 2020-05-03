@@ -40,8 +40,7 @@ while(ynq.lower() == "y"):
         print("No Game Found")
 
     ynq = (input("Another Game? [y/n] ")).lower()
-    print("winOrNot=")
-    print(winOrNot)
+
     scorePage = createGamerScoreTeplate(gamer_name, winOrNot)
     writeScore2File(SCORES_FILE_NAME, scorePage)
 else:

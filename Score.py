@@ -13,8 +13,6 @@ def writeScore2File(filename ,txtStr):
 
 
 def createGamerScoreTeplate(gamerName, gamerScore):
-    print(gamerScore)
-
     defaultname="dGamer"
     defaultscore=0
     scoreHtml=""
