@@ -3,8 +3,14 @@
 ## using pip install python-exchangeratesapi
 from Utils import *
 
+
 def play_currency_roulette(difficulty):
-    get_money_interval(difficulty)
+    return get_money_interval(difficulty)
+
+
+def get_guess_from_user():
+    user_guess = input("Please, guess a number between 1 and 100: ")
+    return int(user_guess)
 
 
 def get_money_interval(difficulty):
@@ -23,12 +29,7 @@ def get_money_interval(difficulty):
 
     if (user_num >= r1 and user_num <= r2):
         print("Good, You won!")
-        return (WINNING_CODE)
+        return (difficulty)
     else:
         print("Sorry, You lose!")
         return (LOSSING_CODE)
-
-def get_guess_from_user():
-    user_guess = input("Please, guess a number between 1 and 100: ")
-    return int(user_guess)
-

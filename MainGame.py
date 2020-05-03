@@ -31,17 +31,18 @@ while(ynq.lower() == "y"):
         elif (which_game2play == 2):
             winOrNot,computer_num = guess_num(get_difficulty)
         elif (which_game2play == 3):
-            play_currency_roulette(get_difficulty)
-        ## elif (which_game2play == 4):
-        ##    play_seven_boom()
+            winOrNot = play_currency_roulette(get_difficulty)
+        elif (which_game2play == 4):
+            play_seven_boom()
         else:
             print(games_name[which_game2play-1])
     else:
         print("No Game Found")
 
-    ynq = (input("Another Game? [y/n] ")).lower()
+    if (which_game2play != 4):
+        scorePage = createGamerScoreTeplate(gamer_name, winOrNot)
+        writeScore2File(SCORES_FILE_NAME, scorePage)
 
-    scorePage = createGamerScoreTeplate(gamer_name, winOrNot)
-    writeScore2File(SCORES_FILE_NAME, scorePage)
+    ynq = (input("Another Game? [y/n] ")).lower()
 else:
     exit()
