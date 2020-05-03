@@ -4,4 +4,4 @@ __pycache__
 .idea\
 *.zip
 .idea\workspace.xml
-templates\score.html
+
