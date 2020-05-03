@@ -44,8 +44,11 @@ def createGamerScoreTableBody(gamerName, gamerScore, gameName):
 
     gamerScore = sumScore(int(gamerScore))
 
-    scoreHtmlBody = "<h2>Player: {GAMERNAME} | GameName: {GAME_NAME} | Score: {SCORE}</h2> \n"
-    scoreHtmlBodyFormat = scoreHtmlBody.format(GAMERNAME=gamerName, GAME_NAME=gameName, SCORE=gamerScore)
+    # scoreHtmlBody = "<h2>Player: {GAMERNAME} | GameName: {GAME_NAME} | Score: {GAME_SCORE}</h2> \n"
+    # scoreHtmlBody = "{'gamername': {GAMERNAME}, 'game_name': {GAME_NAME}, 'score': {GAME_SCORE}},"
+    scoreHtmlBody = "{'gamername': '"+gamerName+"', 'game_name': '"+gameName+"', 'score': "+str(gamerScore)+"},"
+    # scoreHtmlBodyFormat = scoreHtmlBody.format(GAMERNAME=gamerName, GAME_NAME=gameName, GAME_SCORE=gamerScore)
+    scoreHtmlBodyFormat = scoreHtmlBody
 #    scoreHtmlBodyFormat = createGamerScoreTableFooter() + scoreHtmlBodyFormat
 
     return scoreHtmlBodyFormat

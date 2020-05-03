@@ -43,15 +43,15 @@ while(ynq.lower() == "y"):
 
     if (which_game2play != 4):
         scorePage = createGamerScoreTableBody(gamer_name, winOrNot, games_name[which_game2play-1])
-        if (new_game == "y"):
-            writeScore2File(SCORES_FILE_NAME, createGamerScoreTableHeader(), "write")
+        #if (new_game == "y"):
+        #    writeScore2File(SCORES_FILE_NAME, createGamerScoreTableHeader(), "write")
 
         writeScore2File(SCORES_FILE_NAME, scorePage, "append")
 
     ynq = (input("Another Game? [y/n] ")).lower()
     new_game = "n"
 
-    if (ynq != "y"):
-        writeScore2File(SCORES_FILE_NAME, createGamerScoreTableFooter(), "append")
+    #if (ynq != "y"):
+    #    writeScore2File(SCORES_FILE_NAME, createGamerScoreTableFooter(), "append")
 else:
     exit()
