@@ -3,10 +3,14 @@
 from Utils import *
 
 
-def writeScore2File(filename ,txtStr):
+def writeScore2File(filename ,txtStr, cmnd):
     fw = ""
+    if (cmnd == "write"):
+        cmnd = "w+"
+    if (cmnd == "append"):
+        cmnd = "a+"
     try:
-        fw = open(filename, "w+")
+        fw = open(filename, cmnd)
         fw.writelines(txtStr)
         fw.close()
     except:
@@ -14,10 +18,24 @@ def writeScore2File(filename ,txtStr):
         exit(1)
 
 
-def createGamerScoreTable(gamerName, gamerScore):
-    defaultname="dGamer"
+def createGamerScoreTableHeader():
+    scoreHtmlHeader = "<html> \n \
+            <head> \n \
+            <title>Scores Game</title> \n \
+            </head> \n \
+            <body> \n"
+    return scoreHtmlHeader
+
+def createGamerScoreTableFooter():
+    scoreHtmlFooter = "</body></html>\n"
+    return scoreHtmlFooter
+
+
+def createGamerScoreTableBody(gamerName, gamerScore, gameName):
+    defaultname="WorldOfGames"
     defaultscore=0
     scoreHtml=""
+    scoreHtmlBodyFormat = None
 
     if (gamerName == ""):
         gamerName=defaultname
@@ -26,17 +44,11 @@ def createGamerScoreTable(gamerName, gamerScore):
 
     gamerScore = sumScore(int(gamerScore))
 
-    scoreHtml = "<html> \n \
-        <head> \n \
-        <title>Scores Game</title> \n \
-        </head> \n \
-        <body> \n \
-        <h1>Hello {GAMERNAME}</h1> \n \
-        <h2>Your score is <div id='score'>{SCORE}</div></h2> \n \
-        </body> \n \
-        </html>\n"
-    scoreHtml=scoreHtml.format(GAMERNAME=gamerName, SCORE=gamerScore)
-    return scoreHtml
+    scoreHtmlBody = "<h2>Player: {GAMERNAME} | GameName: {GAME_NAME} | Score: {SCORE}</h2> \n"
+    scoreHtmlBodyFormat = scoreHtmlBody.format(GAMERNAME=gamerName, GAME_NAME=gameName, SCORE=gamerScore)
+#    scoreHtmlBodyFormat = createGamerScoreTableFooter() + scoreHtmlBodyFormat
+
+    return scoreHtmlBodyFormat
 
 
 def sumScore(gamerScore):
