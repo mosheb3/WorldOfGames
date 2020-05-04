@@ -1,6 +1,7 @@
 ## Moshe Barazani
 ## Date: 04-02-2020
 ## filename: MainGame.py
+## pip install -r data/requirements.txt
 
 from Live import *
 from Utils import *

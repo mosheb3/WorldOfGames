@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c8c7ecd-a0b0-40b8-a87b-dc31ff3042c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/clean.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainGame.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainGame.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/webServer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -349,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588625710885</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="fix webServer.py">
+      <created>1588626911064</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1588626911064</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -367,18 +371,19 @@
     <MESSAGE value="adding gameTime" />
     <MESSAGE value="fix htmls and css" />
     <MESSAGE value="move data.json to folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="move data.json to folder" />
+    <MESSAGE value="fix webServer.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix webServer.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="627" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588504303816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588504303816" />
-    <state x="637" y="101" key="CommitChangelistDialog2" timestamp="1588625709722">
+    <state x="637" y="101" key="CommitChangelistDialog2" timestamp="1588626909927">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="637" y="101" key="CommitChangelistDialog2/-1920.-4.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588532409832" />
-    <state x="637" y="101" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588625709722" />
+    <state x="637" y="101" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588626909927" />
     <state x="690" y="223" key="FileChooserDialogImpl" timestamp="1588540930920">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
