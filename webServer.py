@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route('/index')
 
 def index():
-    fr = open("data.json", "r")
+    fr = open("data/data.json", "r")
     posts_json_a = fr.readlines()
     fr.close()
 
