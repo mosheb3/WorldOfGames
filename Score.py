@@ -19,20 +19,15 @@ def writeScore2File(filename ,txtStr, cmnd):
         exit(1)
 
 
-def createGamerScoreTableHeader():
-    scoreHtmlHeader = "<html> \n \
-            <head> \n \
-            <title>Scores Game</title> \n \
-            </head> \n \
-            <body> \n"
-    return scoreHtmlHeader
-
-def createGamerScoreTableFooter():
-    scoreHtmlFooter = "</body></html>\n"
-    return scoreHtmlFooter
+def sumScore(gamerScore):
+    if (gamerScore != LOSSING_CODE):
+        points_of_winning = ((gamerScore*3) + 5)
+    else:
+        points_of_winning = 0
+    return points_of_winning
 
 
-def createGamerScoreTableBody(dateTime, gamerName, gamerScore, gameName):
+def createGamerScoreTableBody(gameTime, gamerName, gamerScore, gameName):
     defaultname="WorldOfGames"
     defaultscore=0
     scoreHtml=""
@@ -44,20 +39,7 @@ def createGamerScoreTableBody(dateTime, gamerName, gamerScore, gameName):
         gamerScore=defaultscore
 
     gamerScore = sumScore(int(gamerScore))
+    scoreHtmlBody = "{'gametime': '"+gameTime+"', 'gamername': '"+gamerName+"', 'game_name': '"+gameName+"', 'score': "+str(gamerScore)+"},"
+    #scoreHtmlBodyFormat = scoreHtmlBody
 
-    # scoreHtmlBody = "<h2>Player: {GAMERNAME} | GameName: {GAME_NAME} | Score: {GAME_SCORE}</h2> \n"
-    # scoreHtmlBody = "{'gamername': {GAMERNAME}, 'game_name': {GAME_NAME}, 'score': {GAME_SCORE}},"
-    scoreHtmlBody = "{'gametime': '"+dateTime+"', 'gamername': '"+gamerName+"', 'game_name': '"+gameName+"', 'score': "+str(gamerScore)+"},"
-    # scoreHtmlBodyFormat = scoreHtmlBody.format(GAMERNAME=gamerName, GAME_NAME=gameName, GAME_SCORE=gamerScore)
-    scoreHtmlBodyFormat = scoreHtmlBody
-#    scoreHtmlBodyFormat = createGamerScoreTableFooter() + scoreHtmlBodyFormat
-
-    return scoreHtmlBodyFormat
-
-
-def sumScore(gamerScore):
-    if (gamerScore != LOSSING_CODE):
-        points_of_winning = ((gamerScore*3) + 5)
-    else:
-        points_of_winning = 0
-    return points_of_winning
+    return scoreHtmlBody

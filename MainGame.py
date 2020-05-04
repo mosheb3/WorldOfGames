@@ -12,7 +12,7 @@ from Score import *
 from datetime import datetime
 
 now = datetime.now()
-date_time = now.strftime("%m/%d/%Y %H:%M")
+game_time = now.strftime("%m/%d/%Y %H:%M")
 games_name = ("Memory Game", "Guess Game", "Currency Roulette", "Seven Boom")
 num_of_difficulties = 5
 ynq = "y"
@@ -33,11 +33,14 @@ while(ynq.lower() == "y"):
             get_difficulty = get_game_difficulty(games_name[which_game2play - 1], num_of_difficulties)
 
         if (which_game2play == 1):
-            gamescore = play_memory_game(get_difficulty)
+            game_score = play_memory_game(get_difficulty)
+
         elif (which_game2play == 2):
-            gamescore,computer_num = guess_num(get_difficulty)
+            game_score,computer_num = guess_num(get_difficulty)
+
         elif (which_game2play == 3):
-            gamescore = play_currency_roulette(get_difficulty)
+            game_score = play_currency_roulette(get_difficulty)
+
         elif (which_game2play == 4):
             play_seven_boom()
         else:
@@ -46,16 +49,10 @@ while(ynq.lower() == "y"):
         print("No Game Found")
 
     if (which_game2play != 4):
-        scorePage = createGamerScoreTableBody(date_time, gamer_name, gamescore, games_name[which_game2play-1])
-        #if (new_game == "y"):
-        #    writeScore2File(SCORES_FILE_NAME, createGamerScoreTableHeader(), "write")
-
+        scorePage = createGamerScoreTableBody(game_time, gamer_name, game_score, games_name[which_game2play-1])
         writeScore2File(SCORES_FILE_NAME, scorePage, "append")
 
     ynq = (input("Another Game? [y/n] ")).lower()
     new_game = "n"
-
-    #if (ynq != "y"):
-    #    writeScore2File(SCORES_FILE_NAME, createGamerScoreTableFooter(), "append")
 else:
     exit()
