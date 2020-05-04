@@ -21,8 +21,10 @@ num_of_games = len(games_name)
 
 gamer_name = get_gamer_name()
 
-while(ynq.lower() == "y"):
+##while (ynq.lower() == "y"):
+while True:
     print(new_game)
+    print(ynq)
     which_game2play = load_game(num_of_games)
 
     num_of_games_list = createList(num_of_games)
@@ -50,9 +52,28 @@ while(ynq.lower() == "y"):
 
     if (which_game2play != 4):
         scorePage = createGamerScoreTableBody(game_time, gamer_name, game_score, games_name[which_game2play-1])
-        writeScore2File(SCORES_FILE_NAME, scorePage, "append")
+        if (new_game == "n"):
+            writeScore2File(SCORES_FILE_NAME, scorePage, "append")
+        else:
+            writeScore2File(SCORES_FILE_NAME, scorePage, "write")
 
-    ynq = (input("Another Game? [y/n] ")).lower()
+    ## ynq = (input("Another Game? [y/n] "))
+    ynq = input('Another Game? (Y/N) << ').lower()
+
     new_game = "n"
-else:
-    exit()
+
+    while ynq.lower() not in ("y", "n"):
+        print("y or n")
+        ynq = input('Another Game? (Y/N) << ').lower()
+
+    if (ynq.lower() == 'n'):
+        exit()
+
+    # if (ynq != "y" and ynq != "n"):
+    #     ynq = None
+    #     ynq = (input("Another Game? [y/n] ")).lower()
+    #
+    #if (ynq == "n"):
+    #     exit()
+#else:
+#    ynq = (input("Another Game? [y/n] "))

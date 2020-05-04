@@ -5,13 +5,14 @@
         {% else %}
         <title>Welcome</title>
         {% endif %}
-        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
     </head>
     <body>
         <h1>{{ user.username }}!</h1>
         <table border = 1>
+            <tr><th><b>Game Time</b></th><th><b>Gamer Name</b></th><th><b>Game Name</b></th><th><b>Game Score</b></th></tr>
         {% for post in posts %}
-        <div><p><tr><th>{{ post.gametime }}</th><td>{{ post.gamername }}</td><td>{{ post.game_name }}</td><td>{{ post.score}}</td></tr></p></div>
+        <div><p><tr><td>{{ post.gametime }}</td><td>{{ post.gamername }}</td><td>{{ post.game_name }}</td><td>{{ post.score}}</td></tr></p></div>
         {% endfor %}
         </table>
     </body>
