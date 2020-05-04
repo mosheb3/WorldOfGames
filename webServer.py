@@ -9,6 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 @app.route('/index')
+@app.route('/clean')
 
 def index():
     fr = open("data/data.json", "r")
@@ -25,5 +26,11 @@ def index():
     #              {'gamername': 'moshe2', 'game_name': 'guess', 'score': 12341234},
     #              {'gamername': 'moshe3', 'game_name': 'guess', 'score': 1234512345}]
     return render_template('score.html', title='WorldOfGames', user=user, posts=eval(posts_json_b))
+
+def clean():
+    fw = open("data/data.json", "w+")
+    fw.writelines("")
+    fw.close()
+    return render_template('clean.html')
 
 app.run('127.0.0.1', '8081', debug=True)

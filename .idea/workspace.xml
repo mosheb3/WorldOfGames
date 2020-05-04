@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c8c7ecd-a0b0-40b8-a87b-dc31ff3042c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/clean.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainGame.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainGame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/webServer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -32,6 +33,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../flask" />
@@ -47,7 +49,7 @@
       <recent name="D:\projects\WorldOfGames\css" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MainGame">
+  <component name="RunManager" selected="Python.webServer">
     <configuration name="MainGame" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="WorldOfGames" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -155,8 +157,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.MainGame" />
         <item itemvalue="Python.webServer" />
+        <item itemvalue="Python.MainGame" />
         <item itemvalue="Python.flask1" />
         <item itemvalue="Python.Utils" />
         <item itemvalue="Python.Score" />
@@ -340,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588624813001</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="move data.json to folder">
+      <created>1588625710885</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1588625710885</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -357,47 +366,48 @@
     <MESSAGE value="." />
     <MESSAGE value="adding gameTime" />
     <MESSAGE value="fix htmls and css" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix htmls and css" />
+    <MESSAGE value="move data.json to folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="move data.json to folder" />
   </component>
   <component name="WindowStateProjectService">
     <state x="627" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588504303816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588504303816" />
-    <state x="637" y="101" key="CommitChangelistDialog2" timestamp="1588624811321">
+    <state x="637" y="101" key="CommitChangelistDialog2" timestamp="1588625709722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="637" y="101" key="CommitChangelistDialog2/-1920.-4.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588532409832" />
-    <state x="637" y="101" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588624811321" />
+    <state x="637" y="101" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588625709722" />
     <state x="690" y="223" key="FileChooserDialogImpl" timestamp="1588540930920">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="223" key="FileChooserDialogImpl/-1920.-4.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588540930920" />
     <state x="690" y="223" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588525368457" />
-    <state width="1899" height="425" key="GridCell.Tab.0.bottom" timestamp="1588625657378">
+    <state width="1899" height="425" key="GridCell.Tab.0.bottom" timestamp="1588626833371">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1895" height="380" key="GridCell.Tab.0.bottom/-1920.-4.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588540987052" />
     <state width="1893" height="333" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583045144351" />
-    <state width="1899" height="425" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588625657378" />
-    <state width="1899" height="425" key="GridCell.Tab.0.center" timestamp="1588625657377">
+    <state width="1899" height="425" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588626833371" />
+    <state width="1899" height="425" key="GridCell.Tab.0.center" timestamp="1588626833371">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1895" height="380" key="GridCell.Tab.0.center/-1920.-4.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588540987052" />
     <state width="1893" height="333" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583045144351" />
-    <state width="1899" height="425" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588625657377" />
-    <state width="1899" height="425" key="GridCell.Tab.0.left" timestamp="1588625657377">
+    <state width="1899" height="425" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588626833371" />
+    <state width="1899" height="425" key="GridCell.Tab.0.left" timestamp="1588626833371">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1895" height="380" key="GridCell.Tab.0.left/-1920.-4.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588540987052" />
     <state width="1893" height="333" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583045144351" />
-    <state width="1899" height="425" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588625657377" />
-    <state width="1899" height="425" key="GridCell.Tab.0.right" timestamp="1588625657378">
+    <state width="1899" height="425" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588626833371" />
+    <state width="1899" height="425" key="GridCell.Tab.0.right" timestamp="1588626833371">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1895" height="380" key="GridCell.Tab.0.right/-1920.-4.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588540987052" />
     <state width="1893" height="333" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583045144351" />
-    <state width="1899" height="425" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588625657378" />
+    <state width="1899" height="425" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588626833371" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1588623959951">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -57,6 +57,9 @@ while True:
         else:
             writeScore2File(SCORES_FILE_NAME, scorePage, "write")
 
+
+    #call(["python", "webServer.py"])
+
     ## ynq = (input("Another Game? [y/n] "))
     ynq = input('Another Game? (Y/N) << ').lower()
 
