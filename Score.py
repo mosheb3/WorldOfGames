@@ -1,7 +1,8 @@
 ## Moshe Barazani
 ## Date: 03-05-2020
-from Utils import *
+## filename: Score.py
 
+from Utils import *
 
 def writeScore2File(filename ,txtStr, cmnd):
     fw = ""
@@ -31,7 +32,7 @@ def createGamerScoreTableFooter():
     return scoreHtmlFooter
 
 
-def createGamerScoreTableBody(gamerName, gamerScore, gameName):
+def createGamerScoreTableBody(dateTime, gamerName, gamerScore, gameName):
     defaultname="WorldOfGames"
     defaultscore=0
     scoreHtml=""
@@ -46,7 +47,7 @@ def createGamerScoreTableBody(gamerName, gamerScore, gameName):
 
     # scoreHtmlBody = "<h2>Player: {GAMERNAME} | GameName: {GAME_NAME} | Score: {GAME_SCORE}</h2> \n"
     # scoreHtmlBody = "{'gamername': {GAMERNAME}, 'game_name': {GAME_NAME}, 'score': {GAME_SCORE}},"
-    scoreHtmlBody = "{'gamername': '"+gamerName+"', 'game_name': '"+gameName+"', 'score': "+str(gamerScore)+"},"
+    scoreHtmlBody = "{'gametime': '"+dateTime+"', 'gamername': '"+gamerName+"', 'game_name': '"+gameName+"', 'score': "+str(gamerScore)+"},"
     # scoreHtmlBodyFormat = scoreHtmlBody.format(GAMERNAME=gamerName, GAME_NAME=gameName, GAME_SCORE=gamerScore)
     scoreHtmlBodyFormat = scoreHtmlBody
 #    scoreHtmlBodyFormat = createGamerScoreTableFooter() + scoreHtmlBodyFormat

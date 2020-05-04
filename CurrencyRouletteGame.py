@@ -1,8 +1,9 @@
 ## Moshe Barazani
 ## Date: 04-02-2020
 ## using pip install python-exchangeratesapi
-from Utils import *
+## filename: CurrencyRouletteGame.py
 
+from Utils import *
 
 def play_currency_roulette(difficulty):
     return get_money_interval(difficulty)

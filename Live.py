@@ -1,5 +1,6 @@
 ## Moshe Barazani
 ## Date: 04-02-2020
+## filename: Live.py
 
 def get_gamer_name():
     gamer_name = input("Welcome, enter your name: ")
