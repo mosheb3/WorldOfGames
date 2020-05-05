@@ -5,6 +5,10 @@ import sys
 import subprocess
 import pkg_resources
 
+required_packages = {'flask', 'python-exchangeratesapi'}
+install_packages(required_packages)
+
+
 def install_packages(required_packages):
     installed = {pkg.key for pkg in pkg_resources.working_set}
     missing = required_packages - installed
@@ -18,9 +22,6 @@ def install_packages(required_packages):
         except OSError:
             pass
 
-#-r / path / to / requirements.txt
-
-# SCORES_FILE_NAME = "templates/score.html"
 SCORES_FILE_NAME = "data/data.json"
 BAD_RETURN_CODE  = 500
 WINNING_CODE     = 1000
