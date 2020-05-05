@@ -12,8 +12,8 @@ from SevenBoom import play_seven_boom
 from Score import *
 from datetime import datetime
 
-required_packages = {'flask', 'python-exchangeratesapi','aaaaaa'}
-install_package(required_packages)
+required_packages = {'flask', 'python-exchangeratesapi'}
+install_packages(required_packages)
 
 now = datetime.now()
 game_time = now.strftime("%m/%d/%Y %H:%M")

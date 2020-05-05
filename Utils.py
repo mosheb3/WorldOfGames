@@ -5,16 +5,7 @@ import sys
 import subprocess
 import pkg_resources
 
-# def install_package(package_name, import_package_name):
-#    # subprocess.call(['pip', 'install', package_name])
-#    try:
-#        import import_package_name
-#    except ImportError:
-#        subprocess.check_call([sys.executable, "-m", "pip", "install", package_name])
-#    finally:
-#        import import_package_name
-
-def install_package(required_packages):
+def install_packages(required_packages):
     installed = {pkg.key for pkg in pkg_resources.working_set}
     missing = required_packages - installed
 
