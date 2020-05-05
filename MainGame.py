@@ -12,6 +12,9 @@ from SevenBoom import play_seven_boom
 from Score import *
 from datetime import datetime
 
+required_packages = {'flask', 'python-exchangeratesapi','aaaaaa'}
+install_package(required_packages)
+
 now = datetime.now()
 game_time = now.strftime("%m/%d/%Y %H:%M")
 games_name = ("Memory Game", "Guess Game", "Currency Roulette", "Seven Boom")
@@ -24,8 +27,6 @@ gamer_name = get_gamer_name()
 
 ##while (ynq.lower() == "y"):
 while True:
-    print(new_game)
-    print(ynq)
     which_game2play = load_game(num_of_games)
 
     num_of_games_list = createList(num_of_games)
