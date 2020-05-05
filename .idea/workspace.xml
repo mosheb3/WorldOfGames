@@ -34,7 +34,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../flask" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -174,7 +174,7 @@
     </option>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\mosheb\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -366,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588671262524</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="add README.md">
+      <created>1588671721631</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1588671721631</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -387,18 +394,23 @@
     <MESSAGE value="fix webServer.py" />
     <MESSAGE value="add install_packages in Utils.py" />
     <MESSAGE value="delete requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete requirements.txt" />
+    <MESSAGE value="add README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add README.md" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="452" y="101" key="#Notifications" timestamp="1588671750842">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="101" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1588671750842" />
     <state x="627" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588504303816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588504303816" />
-    <state x="637" y="101" key="CommitChangelistDialog2" timestamp="1588671261547">
+    <state x="637" y="101" key="CommitChangelistDialog2" timestamp="1588671720197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="637" y="101" key="CommitChangelistDialog2/-1920.-4.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588532409832" />
-    <state x="637" y="101" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588671261547" />
+    <state x="637" y="101" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588671720197" />
     <state x="690" y="223" key="FileChooserDialogImpl" timestamp="1588540930920">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -452,18 +464,18 @@
     <state width="1895" height="335" key="GridCell.Tab.1.right/-1920.-4.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588540615769" />
     <state width="1893" height="333" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583045144351" />
     <state width="1895" height="335" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588671355004" />
-    <state x="463" y="165" key="SettingsEditor" timestamp="1588617347539">
+    <state x="463" y="157" key="SettingsEditor" timestamp="1588672296026">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588617347539" />
+    <state x="463" y="157" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588672296026" />
     <state x="452" y="178" key="Vcs.Push.Dialog.v2" timestamp="1582650418254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="452" y="178" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582650418254" />
-    <state x="741" y="421" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588671277762">
+    <state x="741" y="421" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588672300027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="741" y="421" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588671277762" />
+    <state x="741" y="421" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588672300027" />
     <state x="438" y="200" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1582633623573">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
