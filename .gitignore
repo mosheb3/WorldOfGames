@@ -1,7 +1,11 @@
 *pycache*
 venv
 __pycache__
-.idea\
+.idea*
 *.zip
 .idea\workspace.xml
+.idea/workspace.xml
 stam.py
+runWebServer.sh
+data/*
+data\*
