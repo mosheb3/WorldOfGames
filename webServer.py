@@ -33,4 +33,6 @@ def clean():
     fw.close()
     return render_template('clean.html')
 
-app.run('127.0.0.1', '8081', debug=True)
+if __name__ == '__main__':
+    #app.run(debug=True, host='0.0.0.0')
+    app.run('127.0.0.1', '8081', debug=True)
