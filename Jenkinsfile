@@ -18,7 +18,7 @@ pipeline {
    stages {
       stage('build'){
          steps {
-            sh ("docker image build -t WorldOfGames .")
+            sh ("docker build -t wog .")
          }
       }
    }
