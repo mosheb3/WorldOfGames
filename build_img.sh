@@ -1,7 +1,7 @@
 #!/bin/bash
-if [ "$1" == "build"];then
+if [ "$1" == "build" ];then
   docker build -t wog:latest .
-elif [ "$1" == "run"];then
+elif [ "$1" == "run" ];then
   docker run -it --name wog wog:latest python3 MainGame.py
 else
   echo "Usage: bulid / run"
