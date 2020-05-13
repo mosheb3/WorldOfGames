@@ -13,4 +13,4 @@ services:
     image: wog
     restart: always
     volumes:
-      - ".:/app
+      - ".:/app"
