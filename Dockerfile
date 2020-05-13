@@ -10,5 +10,5 @@ RUN pip install python-exchangeratesapi
 
 EXPOSE 8081
 
-CMD ["./runWebServer.sh > /dev/null 2>&1"]
-#CMD python3 MainGame.py
+CMD ["python3", "webServer.py"]
+CMD ["python3", "MainGame.py"]

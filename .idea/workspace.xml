@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4c8c7ecd-a0b0-40b8-a87b-dc31ff3042c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -408,7 +409,56 @@
       <option name="project" value="LOCAL" />
       <updated>1589319571310</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="add webServer.log to .gitignore">
+      <created>1589390655765</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1589390655765</updated>
+    </task>
+    <task id="LOCAL-00034" summary="add webServer.log to .gitignore">
+      <created>1589390716804</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1589390716804</updated>
+    </task>
+    <task id="LOCAL-00035" summary="change build_img.sh">
+      <created>1589391717199</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1589391717199</updated>
+    </task>
+    <task id="LOCAL-00036" summary="change build_img.sh">
+      <created>1589391876127</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1589391876127</updated>
+    </task>
+    <task id="LOCAL-00037" summary="change build_img.sh">
+      <created>1589392019121</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1589392019121</updated>
+    </task>
+    <task id="LOCAL-00038" summary="change build_img.sh">
+      <created>1589395540872</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1589395540872</updated>
+    </task>
+    <task id="LOCAL-00039" summary="fix Dockerfile">
+      <created>1589398529678</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1589398529678</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -433,20 +483,26 @@
     <MESSAGE value="fix Utils.py" />
     <MESSAGE value="fix runWebServer.sh" />
     <MESSAGE value="add Jenkinsfile" />
-    <MESSAGE value="fix Dockerfile" />
     <MESSAGE value="fix Jenkinsfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix Jenkinsfile" />
+    <MESSAGE value="add webServer.log to .gitignore" />
+    <MESSAGE value="change build_img.sh" />
+    <MESSAGE value="fix Dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix Dockerfile" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="708" y="330" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589395449386">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="708" y="330" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589395449386" />
     <state x="627" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588504303816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588504303816" />
-    <state x="637" y="101" key="CommitChangelistDialog2" timestamp="1589319570460">
+    <state x="637" y="101" key="CommitChangelistDialog2" timestamp="1589398528715">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="637" y="101" key="CommitChangelistDialog2/-1920.-4.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588532409832" />
-    <state x="637" y="101" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589319570460" />
+    <state x="637" y="101" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589398528715" />
     <state x="690" y="223" key="FileChooserDialogImpl" timestamp="1589317108386">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -508,10 +564,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588617347539" />
-    <state x="452" y="178" key="Vcs.Push.Dialog.v2" timestamp="1589319844859">
+    <state x="452" y="178" key="Vcs.Push.Dialog.v2" timestamp="1589398652444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="178" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589319844859" />
+    <state x="452" y="178" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589398652444" />
     <state x="741" y="421" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589390483632">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
