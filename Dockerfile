@@ -5,8 +5,6 @@ WORKDIR /app
 
 COPY . /app
 
-VOLUME . /app
-
 RUN pip install Flask
 RUN pip install python-exchangeratesapi
 
