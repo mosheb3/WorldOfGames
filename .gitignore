@@ -5,6 +5,7 @@ __pycache__
 *.zip
 .idea\workspace.xml
 .idea/workspace.xml
+.idea/
 stam.py
 runWebServer.sh
 data/*
