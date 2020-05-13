@@ -8,4 +8,6 @@ COPY . /app
 RUN pip install Flask
 RUN pip install python-exchangeratesapi
 
-CMD ["python3", "MainGame.py"]
+EXPOSE 8081
+
+CMD ["python3", "webServer.py"]
