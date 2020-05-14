@@ -16,10 +16,40 @@ pipeline {
    }
 
    stages {
-      stage('build'){
+      stage('Cloning From GitHub') {
          steps {
-            sh ("docker build -t wog:latest .")
+            echo 'Cloning..'
+            git 'https://github.com/mosheb3/WorldOfGames'
          }
       }
-   }
-}
+
+      stage('Building image') {
+         steps{
+            echo 'Building..'
+            sh('docker-compose build')
+         }
+      }
+
+      stage('Running App') {
+         steps{
+            echo 'running..'
+            sh('docker-compose up -d')
+         }
+      }
+
+/*      stage('testing application') {
+         steps{
+         echo 'testing..'
+         bat 'python tests/e2e.py'
+      }*/
+   } //end stages
+/*   post {
+      always {
+         echo 'finalizing..'
+         bat 'docker login -u alexkalugin -p *******'
+         bat 'docker-compose push'
+         bat 'docker-compose down --rmi all'
+      }
+   }*/
+
+} //end pipeline
