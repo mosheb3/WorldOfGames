@@ -25,15 +25,17 @@ pipeline {
 
       stage('Building image') {
          steps{
-            echo 'Building..'
-            sh('docker-compose build')
+            echo 'Building App Image..'
+            sh('docker build -t wog:latest .')
+            echo 'Building WebServer Image..'
+            sh('docker build -t -f Dockerfile_web wog-web:latest .')
          }
       }
 
-      stage('Running App') {
+      stage('Running WebServer') {
          steps{
             echo 'running..'
-            sh('docker-compose up -d')
+            sh('docker run --rm -d -p 8081:8081 --name wog-web -v $(pwd):/app wog-web:latest')
          }
       }
 
