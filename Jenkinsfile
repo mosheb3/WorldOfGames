@@ -48,7 +48,8 @@ pipeline {
 
       stage('Testing App') {
          steps{
-         echo 'Testing.. Testing.. '
+            echo 'Testing.. Testing.. '
+         }
       }
    } //end stages
 /*   post {
