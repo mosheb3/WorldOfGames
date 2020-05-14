@@ -39,7 +39,7 @@ def get_game_difficulty(game_name, num_of_difficulties):
 
 
 def create_list(list_size):
-    mylist = []
+    my_list = []
     for i in range(1, list_size+1):
-        mylist.append(i)
-    return mylist
+        my_list.append(i)
+    return my_list
