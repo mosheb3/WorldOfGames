@@ -7,12 +7,12 @@ pipeline {
    environment {
        PROJ_ENVIRONMENT="master"
        PROJ_BRANCH="master"
-       WORK_DIR="/srv/projects/WorldOfGames"
        PYTHON_INTERPRETER="/usr/bin/python3"
    }
 
    parameters {
       string(name: "MAIL_TO", defaultValue: "mosheb3@gmail.com")
+      string(name: "WORK_DIR", defaultValue: "/srv/projects/WorldOfGames/")
    }
 
    stages {
@@ -35,7 +35,7 @@ pipeline {
       stage('Running WebServer') {
          steps{
             echo 'Running..'
-            sh('docker run --rm -d -p 8081:8081 --name wog-web -v $(pwd):/app wog-web:latest')
+            sh('docker run --rm -d -p 8081:8081 --name wog-web -v ${params.WORK_DIR}:/app wog-web:latest')
          }
       }
 
