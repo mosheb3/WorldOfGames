@@ -11,6 +11,7 @@ from MemoryGame import play_memory_game
 from CurrencyRouletteGame import play_currency_roulette
 from SevenBoom import play_seven_boom
 from Score import *
+from LoadScore import load_score
 from datetime import datetime
 
 now = datetime.now()
@@ -71,6 +72,7 @@ while True:
 
     if (ynq.lower() == 'n'):
         print("You can see your score at http://localhost:8081")
+        load_score_in_broser()
         exit()
 
     # if (ynq != "y" and ynq != "n"):
