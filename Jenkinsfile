@@ -35,7 +35,7 @@ pipeline {
       stage('Running WebServer') {
          steps{
             echo 'Running..'
-            sh('./run-docker.sh run')
+            sh('sudo ./run-docker.sh run')
          }
       }
 
