@@ -72,7 +72,7 @@ while True:
 
     if (ynq.lower() == 'n'):
         print("You can see your score at http://localhost:8081")
-        load_score()
+        load_score_in_broser()
         exit()
 
     # if (ynq != "y" and ynq != "n"):
