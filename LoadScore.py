@@ -10,7 +10,7 @@ def load_score_in_broser():
    chrome_options.add_argument("--disable-extensions")
 
    #driverCrm = webdriver.Chrome(executable_path='chromedriver/chromedriver.exe', chrome_options=chrome_options)
-   driverCrm = webdriver.Chrome(executable_path='chromedriver/chromedriver.exe', options=chrome_options)
+   driverCrm = webdriver.Chrome(executable_path='chromedriver/chromedriver', options=chrome_options)
 
    # Get into linked result of google search and try to login
    # driverCrm.get("http://localhost:8081")
