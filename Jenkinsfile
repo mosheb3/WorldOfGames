@@ -35,7 +35,7 @@ pipeline {
       stage('Running WebServer') {
          steps{
             echo 'Running..'
-            sh('"${WORK_DIR}"/run-docker.sh run')
+            sh('"${WORK_DIR}"/run-docker.sh run < test_answers.txt')
          }
       }
 
