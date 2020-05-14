@@ -3,7 +3,7 @@ python3 MainGame.py < test_answers.txt
 
 grep "test123" data/data.json
 
-if [ $? ]; then
+if [ $? == 0 ]; then
   echo "aaaaaaaaaa"
 else
   echo "bbbbbbbbbb"
