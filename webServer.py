@@ -28,4 +28,4 @@ def clean():
     return render_template('clean.html')
 
 if __name__ == "__main__":
-    app.run('127.0.0.1', '8081', debug=True)
+    app.run('0.0.0.0', '8081', debug=True)
