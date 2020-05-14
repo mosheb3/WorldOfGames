@@ -11,5 +11,6 @@ def load_score_in_broser():
 
    driver_crm = webdriver.Chrome(executable_path='chromedriver/chromedriver_windows.exe', options=chrome_options)
 
+   # Get into linked result of google search and try to login
    # driver_crm.get("http://localhost:8081")
    driver_crm.get("https://wog.local/")
