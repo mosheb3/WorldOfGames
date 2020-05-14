@@ -3,7 +3,7 @@ version: "3"
 services:
   wog-web:
     build: .
-    image: wogweb
+    image: wog-web
     ports:
       - "8081:8081"
     container_name: wog-web
