@@ -35,6 +35,7 @@ pipeline {
       stage('Running WebServer') {
          steps{
             echo 'Running..'
+            sh('chmod +x ./runWebServer.sh')
             sh('./runWebServer.sh')
          }
       }
@@ -43,7 +44,8 @@ pipeline {
          steps{
             echo 'Running..'
             //sh('python3 MainGame.py < test_answers.txt')
-            sh('./runTests.sh')
+            sh 'chmod +x ./runTests.sh'
+            sh './runTests.sh'
          }
       }
 
