@@ -71,8 +71,10 @@ while True:
         ynq = input('Another Game? (Y/N) << ').lower()
 
     if (ynq.lower() == 'n'):
+        opr = get_operation_system()
+        print(opr)
         print("You can see your score at http://localhost:8081")
-        load_score_in_broser()
+        # load_score_in_broser()
         exit()
 
     # if (ynq != "y" and ynq != "n"):
