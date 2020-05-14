@@ -11,7 +11,7 @@ from MemoryGame import play_memory_game
 from CurrencyRouletteGame import play_currency_roulette
 from SevenBoom import play_seven_boom
 from Score import *
-from LoadScore import load_score
+from LoadScore import load_score_in_broser
 from datetime import datetime
 
 now = datetime.now()
