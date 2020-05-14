@@ -7,6 +7,6 @@ COPY . /app
 
 RUN pip install python-exchangeratesapi
 RUN pip install selenium
-RUN pip install setuptools
+RUN pip install --upgrade setuptools
 
 CMD ["python3", "MainGame.py"]
