@@ -9,7 +9,6 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
-@app.route('/clean', methods=['GET', 'POST'])
 
 def index():
     fr = open("data/data.json", "r")
@@ -20,12 +19,6 @@ def index():
     user = {'username': 'WorldOfGames'}
 
     return render_template('score.html', title='WorldOfGames', user=user, posts=eval(posts_json_b))
-
-def clean():
-    fw = open("data/data.json", "w+")
-    fw.writelines("")
-    fw.close()
-    return render_template('clean.html')
 
 if __name__ == "__main__":
     app.run('0.0.0.0', '8081', debug=True)
