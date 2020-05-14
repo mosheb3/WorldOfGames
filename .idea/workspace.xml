@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c8c7ecd-a0b0-40b8-a87b-dc31ff3042c4" name="Default Changelist" comment="fix webServer.py">
+    <list default="true" id="4c8c7ecd-a0b0-40b8-a87b-dc31ff3042c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile_web" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile_web" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -458,7 +459,49 @@
       <option name="project" value="LOCAL" />
       <updated>1589463696279</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="fix webServer.py">
+      <created>1589464549877</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1589464549877</updated>
+    </task>
+    <task id="LOCAL-00041" summary="change Jenkinsfile">
+      <created>1589466151862</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1589466151862</updated>
+    </task>
+    <task id="LOCAL-00042" summary="change copyproj.sh">
+      <created>1589466193883</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1589466193883</updated>
+    </task>
+    <task id="LOCAL-00043" summary="change docker-compose.yml">
+      <created>1589468442262</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1589468442262</updated>
+    </task>
+    <task id="LOCAL-00044" summary="change docker-compose.yml">
+      <created>1589468470958</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1589468470958</updated>
+    </task>
+    <task id="LOCAL-00045" summary="change docker-compose.yml">
+      <created>1589468599954</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1589468599954</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -485,9 +528,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="move seven_boom to file" />
-    <MESSAGE value="create MemoryGame" />
-    <MESSAGE value="fix none digits game number" />
     <MESSAGE value="Memory game 3" />
     <MESSAGE value="create another game question" />
     <MESSAGE value="adding Score.py" />
@@ -510,7 +550,10 @@
     <MESSAGE value="change Dockerfile" />
     <MESSAGE value="change .gitignore" />
     <MESSAGE value="fix webServer.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix webServer.py" />
+    <MESSAGE value="change Jenkinsfile" />
+    <MESSAGE value="change copyproj.sh" />
+    <MESSAGE value="change docker-compose.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="change docker-compose.yml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="101" key="#Notifications" timestamp="1588671750842">
@@ -521,12 +564,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588504303816" />
-    <state x="637" y="101" key="CommitChangelistDialog2" timestamp="1589463719039">
+    <state x="637" y="101" key="CommitChangelistDialog2" timestamp="1589468598066">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="637" y="101" key="CommitChangelistDialog2/-1920.-4.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588532409832" />
     <state x="510" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589317725692" />
-    <state x="637" y="101" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589463719039" />
+    <state x="637" y="101" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589468598066" />
     <state x="262" y="133" key="DiffContextDialog" timestamp="1589369551575">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -592,11 +635,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="157" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588672296026" />
-    <state x="452" y="178" key="Vcs.Push.Dialog.v2" timestamp="1589463795140">
+    <state x="452" y="178" key="Vcs.Push.Dialog.v2" timestamp="1589466209662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="362" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589317736416" />
-    <state x="452" y="178" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589463795140" />
+    <state x="452" y="178" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589466209662" />
     <state x="741" y="421" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589463662736">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

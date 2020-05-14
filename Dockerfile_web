@@ -6,7 +6,6 @@ WORKDIR /app
 COPY . /app
 
 RUN pip install Flask
-RUN pip install python-exchangeratesapi
 
 EXPOSE 8081
 
