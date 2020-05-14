@@ -20,7 +20,7 @@ def install_packages(package_name):
 
 ## -----------------------------------------------------##
 
-required_packages = {'flask', 'python-exchangeratesapi'}
+required_packages = {'flask', 'python-exchangeratesapi', 'selenium'}
 install_packages(required_packages)
 
 
