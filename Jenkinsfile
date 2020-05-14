@@ -13,6 +13,7 @@ pipeline {
    parameters {
       string(name: "MAIL_TO", defaultValue: "mosheb3@gmail.com")
       string(name: "WORK_DIR", defaultValue: "/srv/projects/WorldOfGames")
+      choice(name: 'Build', choices: "yes\no", description: '')
    }
 
    stages {
@@ -25,10 +26,12 @@ pipeline {
 
       stage('Building image') {
          steps{
-            echo 'Building App Image..'
-            sh('docker build -t wog:latest .')
-            echo 'Building WebServer Image..'
-            sh('docker build -f Dockerfile_web -t wog-web:latest .')
+            if ("${params.build}" == "yes") {
+               echo 'Building App Image..'
+               sh('docker build -t wog:latest .')
+               echo 'Building WebServer Image..'
+               sh('docker build -f Dockerfile_web -t wog-web:latest .')
+            }
          }
       }
 
