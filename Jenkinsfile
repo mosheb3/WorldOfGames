@@ -34,7 +34,7 @@ pipeline {
 
       stage('Running WebServer') {
          steps{
-            echo 'running..'
+            echo 'Running..'
             sh('docker run --rm -d -p 8081:8081 --name wog-web -v $(pwd):/app wog-web:latest')
          }
       }
