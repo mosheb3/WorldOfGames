@@ -26,7 +26,7 @@ def get_operation_system():
 
 ## -----------------------------------------------------##
 
-required_packages = {'flask', 'python-exchangeratesapi', 'selenium'}
+required_packages = {'setuptools', 'flask', 'python-exchangeratesapi', 'selenium'}
 install_packages(required_packages)
 
 SCORES_FILE_NAME = "data/data.json"
