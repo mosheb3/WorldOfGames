@@ -28,7 +28,7 @@ pipeline {
             echo 'Building App Image..'
             sh('docker build -t wog:latest .')
             echo 'Building WebServer Image..'
-            sh('docker build -t -f Dockerfile_web wog-web:latest .')
+            sh('docker build -f Dockerfile_web -t wog-web:latest .')
          }
       }
 
@@ -48,7 +48,7 @@ pipeline {
 /*   post {
       always {
          echo 'finalizing..'
-         bat 'docker login -u alexkalugin -p *******'
+         bat 'docker login -u mosheb3 -p *******'
          bat 'docker-compose push'
          bat 'docker-compose down --rmi all'
       }
