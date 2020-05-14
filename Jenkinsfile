@@ -42,7 +42,8 @@ pipeline {
       stage('Running Game4Testing') {
          steps{
             echo 'Running..'
-            sh('python3 MainGame.py < test_answers.txt')
+            //sh('python3 MainGame.py < test_answers.txt')
+            sh('./runTests.sh')
          }
       }
 
