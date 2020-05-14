@@ -11,4 +11,4 @@ PROJ_NAME="WorldOfGames"
 #scp /drives/d/PycharmProjects/${PROJ_NAME}/Jenkinsfile root@devops.local:/srv/projects/${PROJ_NAME}/
 
 rsync -ravz --exclude=.git/ --exclude=.idea/ --exclude=__pycache__ /drives/d/PycharmProjects/${PROJ_NAME}/* root@devops.local:/srv/projects/${PROJ_NAME}/
-ssh root@devops.local "cd /srv/projects/${PROJ_NAME}/ ; git commit -am 'commit from local copy'"
+ssh root@devops.local "cd /srv/projects/${PROJ_NAME}/ ; dos2unix *;git commit -am 'commit from local copy'"

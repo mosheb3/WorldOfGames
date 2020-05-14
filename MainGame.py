@@ -5,6 +5,7 @@
 
 from Live import *
 from Utils import *
+import json
 from GuessGame import guess_num
 from MemoryGame import play_memory_game
 from CurrencyRouletteGame import play_currency_roulette
@@ -69,6 +70,12 @@ while True:
         ynq = input('Another Game? (Y/N) << ').lower()
 
     if (ynq.lower() == 'n'):
+        fr = open("data/data.json", "r")
+        posts_json_a = fr.readlines()
+        fr.close()
+
+        posts_json_b = "[" + (json.dumps(posts_json_a)[2:-2]) + "]"
+        print(posts_json_b)
         exit()
 
     # if (ynq != "y" and ynq != "n"):
