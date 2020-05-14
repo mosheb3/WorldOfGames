@@ -2,7 +2,6 @@
 ## Date: 25-02-2020
 from Utils import *
 
-
 def generate_sequence(difficulty):
     import random
 

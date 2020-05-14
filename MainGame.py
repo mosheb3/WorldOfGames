@@ -24,12 +24,10 @@ num_of_games = len(games_name)
 
 gamer_name = get_gamer_name()
 
-##while (ynq.lower() == "y"):
 while True:
     which_game2play = load_game(num_of_games)
 
-    num_of_games_list = createList(num_of_games)
-#    get_difficulty = get_game_difficulty(games_name[which_game2play - 1], num_of_difficulties)
+    num_of_games_list = create_list(num_of_games)
 
     if (which_game2play in num_of_games_list):
         if (which_game2play in (1,2,3)):
@@ -52,16 +50,12 @@ while True:
         print("No Game Found")
 
     if (which_game2play != 4):
-        scorePage = createGamerScoreTableBody(game_time, gamer_name, game_score, games_name[which_game2play-1])
+        score_page = createGamerScoreTableBody(game_time, gamer_name, game_score, games_name[which_game2play-1])
         if (new_game == "n"):
-            writeScore2File(SCORES_FILE_NAME, scorePage, "append")
+            write_score_2_file(SCORES_FILE_NAME, score_page, "append")
         else:
-            writeScore2File(SCORES_FILE_NAME, scorePage, "write")
+            write_score_2_file(SCORES_FILE_NAME, score_page, "write")
 
-
-    #call(["python", "webServer.py"])
-
-    ## ynq = (input("Another Game? [y/n] "))
     ynq = input('Another Game? (Y/N) << ').lower()
 
     new_game = "n"
@@ -72,16 +66,8 @@ while True:
 
     if (ynq.lower() == 'n'):
         opr = get_operation_system()
-        print(opr)
-        print("You can see your score at http://localhost:8081")
-        # load_score_in_broser()
+        if (opr.lower() == "linux"):
+           print("You can see your score at http://localhost:8081")
+        else:
+           load_score_in_broser()
         exit()
-
-    # if (ynq != "y" and ynq != "n"):
-    #     ynq = None
-    #     ynq = (input("Another Game? [y/n] ")).lower()
-    #
-    #if (ynq == "n"):
-    #     exit()
-#else:
-#    ynq = (input("Another Game? [y/n] "))

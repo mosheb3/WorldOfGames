@@ -16,5 +16,5 @@
 
     python3 -m pip install --upgrade pip setuptools wheel
 
-    pip install -r flask
+    pip install -r flask, selenium
     pip install -r python-exchangeratesapi

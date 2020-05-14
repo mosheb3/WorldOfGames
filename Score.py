@@ -4,7 +4,7 @@
 
 from Utils import *
 
-def writeScore2File(filename ,txtStr, cmnd):
+def write_score_2_file(filename ,txtStr, cmnd):
     fw = ""
     if (cmnd == "write"):
         cmnd = "w+"
@@ -19,27 +19,26 @@ def writeScore2File(filename ,txtStr, cmnd):
         exit(1)
 
 
-def sumScore(gamerScore):
-    if (gamerScore != LOSSING_CODE):
-        points_of_winning = ((gamerScore*3) + 5)
+def sum_score(gamer_score):
+    if (gamer_score != LOSSING_CODE):
+        points_of_winning = ((gamer_score*3) + 5)
     else:
         points_of_winning = 0
     return points_of_winning
 
 
-def createGamerScoreTableBody(gameTime, gamerName, gamerScore, gameName):
+def createGamerScoreTableBody(game_time, gamer_name, gamer_score, game_name):
     defaultname="WorldOfGames"
     defaultscore=0
     scoreHtml=""
     scoreHtmlBodyFormat = None
 
-    if (gamerName == ""):
-        gamerName=defaultname
-    if (gamerScore == "" or gamerScore == None or gamerScore == 0):
-        gamerScore=defaultscore
+    if (gamer_name == ""):
+        gamer_name=defaultname
+    if (gamer_score == "" or gamer_score == None or gamer_score == 0):
+        gamer_score=defaultscore
 
-    gamerScore = sumScore(int(gamerScore))
-    scoreHtmlBody = "{'gametime': '"+gameTime+"', 'gamername': '"+gamerName+"', 'game_name': '"+gameName+"', 'score': "+str(gamerScore)+"},"
-    #scoreHtmlBodyFormat = scoreHtmlBody
+    gamer_score = sum_score(int(gamer_score))
+    scoreHtmlBody = "{'gametime': '"+game_time+"', 'gamername': '"+gamer_name+"', 'game_name': '"+game_name+"', 'score': "+str(gamer_score)+"},"
 
     return scoreHtmlBody
