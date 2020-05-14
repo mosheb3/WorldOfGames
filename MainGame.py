@@ -70,8 +70,12 @@ while True:
         ynq = input('Another Game? (Y/N) << ').lower()
 
     if (ynq.lower() == 'n'):
-        with open('data/data.json', 'r') as handle:
-            parsed = json.load(handle)
+        fr = open("data/data.json", "r")
+        posts_json_a = fr.readlines()
+        fr.close()
+
+        posts_json_b = "[" + (json.dumps(posts_json_a)[2:-2]) + "]"
+        print(posts_json_b)
         exit()
 
     # if (ynq != "y" and ynq != "n"):
