@@ -18,7 +18,7 @@ pipeline {
    stages {
       stage('build'){
          steps {
-            sh ("docker build -t wog .")
+            sh ("docker build -t wog:latest .")
          }
       }
    }

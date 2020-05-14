@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  wog-web:
+    image: wogweb
+    restart: always
+    ports:
+      - "8081:8081"
+    volumes:
+      - ".:/app:rw"
+
+  wog:
+    image: wog
+    restart: always
+    volumes:
+      - ".:/app"

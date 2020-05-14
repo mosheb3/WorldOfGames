@@ -10,3 +10,4 @@ stam.py
 runWebServer.sh
 data/*
 data\*
+webServer.log
