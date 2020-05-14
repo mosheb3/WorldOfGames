@@ -75,7 +75,8 @@ while True:
         fr.close()
 
         posts_json_b = "[" + (json.dumps(posts_json_a)[2:-2]) + "]"
-        print(posts_json_b)
+        print json.dumps(posts_json_b, indent=2, sort_keys=True)
+
         exit()
 
     # if (ynq != "y" and ynq != "n"):
