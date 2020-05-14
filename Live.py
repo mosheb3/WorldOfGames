@@ -17,7 +17,7 @@ def load_game(num_of_games):
 
     game2play = ""
     game2play = input("Choose your game: ")
-    num_of_games_list = createList(num_of_games)
+    num_of_games_list = create_list(num_of_games)
 
     if (game2play.isdigit()):
         while (int(game2play) not in num_of_games_list):
@@ -30,7 +30,7 @@ def load_game(num_of_games):
 
 
 def get_game_difficulty(game_name, num_of_difficulties):
-    num_of_difficulties_list = createList(num_of_difficulties)
+    num_of_difficulties_list = create_list(num_of_difficulties)
     game_difficulty = input("Please choose game difficulty for \"{gn}\" from 1 to 5: ".format(gn=game_name))
 
     while (int(game_difficulty) not in num_of_difficulties_list):
@@ -38,8 +38,8 @@ def get_game_difficulty(game_name, num_of_difficulties):
     return int(game_difficulty)
 
 
-def createList(listSize):
+def create_list(list_size):
     mylist = []
-    for i in range(1, listSize+1):
+    for i in range(1, list_size+1):
         mylist.append(i)
     return mylist

@@ -12,7 +12,7 @@ pipeline {
 
    parameters {
       string(name: "MAIL_TO", defaultValue: "mosheb3@gmail.com")
-      string(name: "WORK_DIR", defaultValue: "/srv/projects/WorldOfGames/")
+      string(name: "WORK_DIR", defaultValue: "/srv/projects/WorldOfGames")
    }
 
    stages {
@@ -35,7 +35,7 @@ pipeline {
       stage('Running WebServer') {
          steps{
             echo 'Running..'
-            sh('./run-docker.sh run')
+            sh('"${WORK_DIR}"/run-docker.sh run')
          }
       }
 

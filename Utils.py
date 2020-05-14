@@ -29,8 +29,7 @@ def get_operation_system():
 required_packages = {'flask', 'python-exchangeratesapi', 'selenium'}
 install_packages(required_packages)
 
-
 SCORES_FILE_NAME = "data/data.json"
-BAD_RETURN_CODE  = 500
-WINNING_CODE     = 1000
-LOSSING_CODE     = 2000
+BAD_RETURN_CODE = 500
+WINNING_CODE = 1000
+LOSSING_CODE = 2000

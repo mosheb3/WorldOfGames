@@ -9,9 +9,7 @@ def load_score_in_broser():
    chrome_options.add_experimental_option("detach", True)
    chrome_options.add_argument("--disable-extensions")
 
-   #driverCrm = webdriver.Chrome(executable_path='chromedriver/chromedriver.exe', chrome_options=chrome_options)
-   driverCrm = webdriver.Chrome(executable_path='chromedriver/chromedriver_windows.exe', options=chrome_options)
+   driver_crm = webdriver.Chrome(executable_path='chromedriver/chromedriver_windows.exe', options=chrome_options)
 
-   # Get into linked result of google search and try to login
-   # driverCrm.get("http://localhost:8081")
-   driverCrm.get("https://wog.local/")
+   # driver_crm.get("http://localhost:8081")
+   driver_crm.get("https://wog.local/")
