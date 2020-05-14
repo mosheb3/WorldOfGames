@@ -7,12 +7,12 @@ pipeline {
    environment {
        PROJ_ENVIRONMENT="master"
        PROJ_BRANCH="master"
-       WORK_DIR="/srv/projects/WorldOfGames"
        PYTHON_INTERPRETER="/usr/bin/python3"
    }
 
    parameters {
       string(name: "MAIL_TO", defaultValue: "mosheb3@gmail.com")
+      string(name: "WORK_DIR", defaultValue: "/srv/projects/WorldOfGames/")
    }
 
    stages {
@@ -25,15 +25,17 @@ pipeline {
 
       stage('Building image') {
          steps{
-            echo 'Building..'
-            sh('docker-compose build')
+            echo 'Building App Image..'
+            sh('docker build -t wog:latest .')
+            echo 'Building WebServer Image..'
+            sh('docker build -f Dockerfile_web -t wog-web:latest .')
          }
       }
 
-      stage('Running App') {
+      stage('Running WebServer') {
          steps{
-            echo 'running..'
-            sh('docker-compose up -d')
+            echo 'Running..'
+            sh('./run-docker.sh run')
          }
       }
 
@@ -46,7 +48,7 @@ pipeline {
 /*   post {
       always {
          echo 'finalizing..'
-         bat 'docker login -u alexkalugin -p *******'
+         bat 'docker login -u mosheb3 -p *******'
          bat 'docker-compose push'
          bat 'docker-compose down --rmi all'
       }
