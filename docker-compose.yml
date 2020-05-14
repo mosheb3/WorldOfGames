@@ -4,6 +4,9 @@ services:
   wog-web:
     build: .
     image: wog-web
+    restart: always
+    volumes:
+      - ".:/app"
     ports:
       - "8081:8081"
     container_name: wog-web
