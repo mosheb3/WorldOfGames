@@ -18,6 +18,12 @@ def install_packages(package_name):
         except OSError:
             pass
 
+
+def get_operation_system():
+    opr = sys.platform
+    return opr
+
+
 ## -----------------------------------------------------##
 
 required_packages = {'flask', 'python-exchangeratesapi', 'selenium'}
