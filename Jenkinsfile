@@ -26,11 +26,13 @@ pipeline {
 
       stage('Building image') {
          steps{
-            if ("${params.build}" == "yes") {
-               echo 'Building App Image..'
-               sh('docker build -t wog:latest .')
-               echo 'Building WebServer Image..'
-               sh('docker build -f Dockerfile_web -t wog-web:latest .')
+            script {
+               if ("${params.build}" == "yes") {
+                  echo 'Building App Image..'
+                  sh('docker build -t wog:latest .')
+                  echo 'Building WebServer Image..'
+                  sh('docker build -f Dockerfile_web -t wog-web:latest .')
+               }
             }
          }
       }
