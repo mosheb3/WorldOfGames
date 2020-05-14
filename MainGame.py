@@ -70,13 +70,7 @@ while True:
         ynq = input('Another Game? (Y/N) << ').lower()
 
     if (ynq.lower() == 'n'):
-        fr = open("data/data.json", "r")
-        posts_json_a = fr.readlines()
-        fr.close()
-
-        posts_json_b = "[" + (json.dumps(posts_json_a)[2:-2]) + "]"
-        print json.dumps(posts_json_b, indent=2, sort_keys=True)
-
+        print("You can see your score at http://localhost:8081")
         exit()
 
     # if (ynq != "y" and ynq != "n"):
