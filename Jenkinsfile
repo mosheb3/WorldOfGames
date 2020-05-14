@@ -44,8 +44,8 @@ pipeline {
          steps{
             echo 'Running..'
             //sh('python3 MainGame.py < test_answers.txt')
-            sh 'chmod +x ./runTests.sh'
-            sh './runTests.sh'
+            sh('chmod +x ./runTests.sh')
+            sh('./runTests.sh')
          }
       }
 
