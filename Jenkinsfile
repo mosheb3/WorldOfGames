@@ -35,15 +35,21 @@ pipeline {
       stage('Running WebServer') {
          steps{
             echo 'Running..'
-            sh('"${WORK_DIR}"/run-docker.sh run < test_answers.txt')
+            sh('./runWebServer.sh')
          }
       }
 
-/*      stage('testing application') {
+      stage('Running Game4Testing') {
          steps{
-         echo 'testing..'
-         bat 'python tests/e2e.py'
-      }*/
+            echo 'Running..'
+            sh('python3 MainGame.py < test_answers.txt')
+         }
+      }
+
+      stage('Testing App') {
+         steps{
+         echo 'Testing.. Testing.. '
+      }
    } //end stages
 /*   post {
       always {
