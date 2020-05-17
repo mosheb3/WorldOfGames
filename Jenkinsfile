@@ -27,7 +27,7 @@ pipeline {
       stage('Cloning From GitHub') {
          steps {
             echo 'Cloning App ..'
-            git 'https://github.com/mosheb3/WorldOfGames'
+            git branch: 'master', url: 'https://github.com/mosheb3/WorldOfGames'
          }
       }
 
