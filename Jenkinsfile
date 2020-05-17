@@ -59,20 +59,29 @@ pipeline {
 
       stage('Running WebServer') {
          steps{
-            echo 'Running..'
-            sh('chmod +x ./runWebServer.sh')
-            sh('./runWebServer.sh')
+            echo 'Running WebServer ..'
+            //sh('chmod +x ./runWebServer.sh')
+            //sh('./runWebServer.sh')
+            script{
+                dockerImage_web.inside {
+                   sh('chmod +x ./runWebServer.sh')
+                   sh('./runWebServer.sh')
+                   echo "Run Tests .."
+                   sh('chmod +x ./runTests.sh')
+                   sh('./runTests.sh')
+                }
+            }
          }
       }
 
-      stage('Running Game4Testing') {
+      /*stage('Running Game4Testing') {
          steps{
             echo 'Running..'
             //sh('python3 MainGame.py < test_answers.txt')
             sh('chmod +x ./runTests.sh')
             sh('./runTests.sh')
          }
-      }
+      }*/
 
       stage('Deploy Image') {
          steps{
