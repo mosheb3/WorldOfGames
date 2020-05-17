@@ -77,7 +77,7 @@ pipeline {
       stage('Deploy Image') {
          steps{
             script {
-               if ("${params.BUILD_OPS}" == "yes") {
+               if ("${params.BUILD_OPS}" == "YES") {
                   docker.withRegistry( '', registryCredential ) {
                      dockerImage.push()
                   }
