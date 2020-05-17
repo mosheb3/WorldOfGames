@@ -35,7 +35,7 @@ def get_host_ip():
 ## -----------------------------------------------------##
 
 required_packages = {'setuptools', 'flask', 'python-exchangeratesapi', 'selenium'}
-install_packages(required_packages)
+# install_packages(required_packages)
 
 SCORES_FILE_NAME = "data/data.json"
 BAD_RETURN_CODE = 500
