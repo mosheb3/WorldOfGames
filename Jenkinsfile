@@ -20,7 +20,6 @@ pipeline {
       string(name: "MAIL_TO", defaultValue: "mosheb3@gmail.com")
       string(name: "WORK_DIR", defaultValue: "/srv/projects/WorldOfGames")
       choice(name: 'BUILD_OPS', choices: "NO\nYES", description: 'Building image options')
-      choice(name: 'DEPLOY_OPS', choices: "NO\nYES", description: 'Deploy options')
    }
 
    stages {
