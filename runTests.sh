@@ -7,6 +7,8 @@ cat data/data.json | grep -i "test123333"
 
 if [ $? == 0 ]; then
   echo "Test Success"
+  exit 0
 else
   echo "Test Not Success"
+  exit 1
 fi
