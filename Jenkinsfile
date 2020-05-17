@@ -87,9 +87,10 @@ pipeline {
       stage('Deploy Image') {
          steps{
             script {
-               if ("${params.BUILD_OPS}" == "YES") {
+               if ("${params.DEPLOY_OPS}" == "YES") {
                   docker.withRegistry( '', registryCredential ) {
                      dockerImage.push()
+                     dockerImage_web.push()
                   }
                }
                else {
