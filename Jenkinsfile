@@ -11,7 +11,7 @@ pipeline {
        BUILD_NUMBER="latest"
        registry = "mosheb3/wog"
        registry_web = "mosheb3/wog-web"
-       registryCredential = 'dockerHub'
+       registryCredential = 'docker_hub_cred'
        dockerImage = ''
        dockerImage_web = ''
    }
@@ -87,7 +87,7 @@ pipeline {
          steps{
             script {
                if ("${params.BUILD_OPS}" == "YES") {
-                  docker.withRegistry( '', registryCredential ) {
+                  docker.withRegistry( 'https://hub.docker.com', registryCredential ) {
                      dockerImage.push()
                   }
                }
