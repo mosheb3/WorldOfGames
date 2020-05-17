@@ -45,24 +45,9 @@ pipeline {
          }
       }
 
-      /*stage('Building image') {
-         steps{
-            script {
-               if ("${params.BUILD_OPS}" == "YES") {
-                  echo 'Building App Image..'
-                  sh('docker build -t mosheb3/wog:latest .')
-                  echo 'Building WebServer Image..'
-                  sh('docker build -f Dockerfile_web -t mosheb3/wog-web:latest .')
-               }
-            }
-         }
-      }*/
-
       stage('Running WebServer') {
          steps{
             echo 'Running WebServer ..'
-            //sh('chmod +x ./runWebServer.sh')
-            //sh('./runWebServer.sh')
             script{
                 dockerImage_web.inside {
                    sh('chmod +x ./runWebServer.sh')
@@ -81,7 +66,7 @@ pipeline {
          }
       }
 
-      stage('Deploy Image') {
+      /*stage('Deploy Image') {
          steps{
             script {
                if ("${params.DEPLOY_OPS}" == "YES") {
@@ -95,7 +80,7 @@ pipeline {
                }
             }
          }
-      }
+      }*/
    } //end stages
 /*   post {
       always {

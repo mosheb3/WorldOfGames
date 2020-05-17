@@ -1,0 +1,36 @@
+pipeline {
+   agent any
+   options {
+      timestamps()
+   }
+
+   environment {
+       PROJ_ENVIRONMENT="master"
+       PROJ_BRANCH="master"
+       PYTHON_INTERPRETER="/usr/bin/python3"
+       BUILD_NUMBER="latest"
+       registry = "mosheb3/wog"
+       registry_web = "mosheb3/wog-web"
+       registryCredential = 'docker_hub_cred'
+       dockerImage = ''
+       dockerImage_web = ''
+   }
+
+   parameters {
+      string(name: "MAIL_TO", defaultValue: "mosheb3@gmail.com")
+      string(name: "WORK_DIR", defaultValue: "/srv/projects/WorldOfGames")
+   }
+
+   stages {
+      stage('Deploy Image') {
+         steps{
+            script {
+               docker.withRegistry( '', registryCredential ) {
+                  dockerImage.push()
+                  dockerImage_web.push()
+               }
+            }
+         }
+      }
+   } //end stages
+} //end pipeline
