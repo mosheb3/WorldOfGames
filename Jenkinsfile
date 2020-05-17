@@ -69,8 +69,13 @@ pipeline {
                    sh('./runWebServer.sh')
                    echo "Run Tests .."
                    sh('chmod +x ./runTests.sh')
-                   def test_res = sh('./runTests.sh')
-                   echo "res="+${test_res}
+                   def test_res = sh('./runTests.sh') as string
+                   println("res = ${test_res}")
+
+                   //script {
+                   //   def disk_size = sh(script: "df / --output=avail | tail -1", returnStdout: true).trim() as Integer
+                   //   println("disk_size = ${disk_size}")
+                   //}
                 }
             }
          }
