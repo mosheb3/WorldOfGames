@@ -1,7 +1,7 @@
 ## Moshe Barazani
 ## Date: 03-05-2020
 ## filename: webServer.py
-from Utils import *
+
 from flask import Flask, render_template
 import json
 
