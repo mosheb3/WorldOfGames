@@ -24,6 +24,8 @@ num_of_games = len(games_name)
 
 gamer_name = get_gamer_name()
 
+get_host_ip()
+
 while True:
     which_game2play = load_game(num_of_games)
 

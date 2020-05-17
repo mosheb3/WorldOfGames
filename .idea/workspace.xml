@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4c8c7ecd-a0b0-40b8-a87b-dc31ff3042c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,7 @@
       <recent name="D:\projects\WorldOfGames\css" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.LoadScore">
+  <component name="RunManager" selected="Shell Script.runTests.sh">
     <configuration name="LoadScore" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="WorldOfGames" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,34 +130,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="webServer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="WorldOfGames" />
+    <configuration name="runTests.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/runTests.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INTERPRETER_PATH" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/webServer.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.LoadScore" />
+        <item itemvalue="Shell Script.runTests.sh" />
         <item itemvalue="Python.MainGame" />
+        <item itemvalue="Python.LoadScore" />
         <item itemvalue="Python.flask1" />
         <item itemvalue="Python.Utils" />
-        <item itemvalue="Python.webServer" />
       </list>
     </recent_temporary>
   </component>
@@ -184,223 +170,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580829073282</updated>
-    </task>
-    <task id="LOCAL-00013" summary="fix MainGame.py">
-      <created>1588513559703</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1588513559703</updated>
-    </task>
-    <task id="LOCAL-00014" summary="fix MainGame.py">
-      <created>1588514491165</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1588514491165</updated>
-    </task>
-    <task id="LOCAL-00015" summary="fix MainGame.py">
-      <created>1588515355089</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1588515355089</updated>
-    </task>
-    <task id="LOCAL-00016" summary="fix MainGame.py">
-      <created>1588519286765</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1588519286765</updated>
-    </task>
-    <task id="LOCAL-00017" summary="fix MainGame.py">
-      <created>1588519807885</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1588519807885</updated>
-    </task>
-    <task id="LOCAL-00018" summary="fix MainGame.py and create webServer.py">
-      <created>1588545154060</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1588545154060</updated>
-    </task>
-    <task id="LOCAL-00019" summary="fix .gitignore">
-      <created>1588545184874</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1588545184874</updated>
-    </task>
-    <task id="LOCAL-00020" summary=".">
-      <created>1588545205799</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1588545205799</updated>
-    </task>
-    <task id="LOCAL-00021" summary="adding gameTime">
-      <created>1588583863004</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1588583863004</updated>
-    </task>
-    <task id="LOCAL-00022" summary="fix htmls and css">
-      <created>1588624813001</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1588624813001</updated>
-    </task>
-    <task id="LOCAL-00023" summary="move data.json to folder">
-      <created>1588625710885</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1588625710885</updated>
-    </task>
-    <task id="LOCAL-00024" summary="fix webServer.py">
-      <created>1588626911064</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1588626911064</updated>
-    </task>
-    <task id="LOCAL-00025" summary="add install_packages in Utils.py">
-      <created>1588671069055</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1588671069055</updated>
-    </task>
-    <task id="LOCAL-00026" summary="delete requirements.txt">
-      <created>1588671262524</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1588671262524</updated>
-    </task>
-    <task id="LOCAL-00027" summary="add README.md">
-      <created>1588671721631</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1588671721631</updated>
-    </task>
-    <task id="LOCAL-00028" summary="change .gitignore">
-      <created>1588672421211</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1588672421211</updated>
-    </task>
-    <task id="LOCAL-00029" summary="changing flask1.py">
-      <created>1588753959906</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1588753959906</updated>
-    </task>
-    <task id="LOCAL-00030" summary="changing webServer.py">
-      <created>1588774608033</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1588774608033</updated>
-    </task>
-    <task id="LOCAL-00031" summary="changing .gitignore">
-      <created>1588774685518</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1588774685518</updated>
-    </task>
-    <task id="LOCAL-00032" summary="add Dockerfile">
-      <created>1589317726820</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1589317726820</updated>
-    </task>
-    <task id="LOCAL-00033" summary="add Dockerfile">
-      <created>1589362189543</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1589362189543</updated>
-    </task>
-    <task id="LOCAL-00034" summary="add Dockerfile">
-      <created>1589367975675</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1589367975676</updated>
-    </task>
-    <task id="LOCAL-00035" summary="add Dockerfile">
-      <created>1589368951215</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1589368951215</updated>
-    </task>
-    <task id="LOCAL-00036" summary="change Dockerfile">
-      <created>1589369431084</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1589369431084</updated>
-    </task>
-    <task id="LOCAL-00037" summary="change .gitignore">
-      <created>1589369569846</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1589369569846</updated>
-    </task>
-    <task id="LOCAL-00038" summary="fix webServer.py">
-      <created>1589463632335</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1589463632335</updated>
-    </task>
-    <task id="LOCAL-00039" summary="fix webServer.py">
-      <created>1589463696279</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1589463696279</updated>
-    </task>
-    <task id="LOCAL-00040" summary="fix webServer.py">
-      <created>1589464549877</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1589464549877</updated>
-    </task>
-    <task id="LOCAL-00041" summary="change Jenkinsfile">
-      <created>1589466151862</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1589466151862</updated>
-    </task>
-    <task id="LOCAL-00042" summary="change copyproj.sh">
-      <created>1589466193883</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1589466193883</updated>
-    </task>
-    <task id="LOCAL-00043" summary="change docker-compose.yml">
-      <created>1589468442262</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1589468442262</updated>
     </task>
     <task id="LOCAL-00044" summary="change docker-compose.yml">
       <created>1589468470958</created>
@@ -528,7 +297,224 @@
       <option name="project" value="LOCAL" />
       <updated>1589474426907</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="change Utils.py">
+      <created>1589474507838</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1589474507838</updated>
+    </task>
+    <task id="LOCAL-00063" summary="change chromedriver.exe">
+      <created>1589474588642</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1589474588642</updated>
+    </task>
+    <task id="LOCAL-00064" summary="change Jenkinsfile">
+      <created>1589474775052</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1589474775052</updated>
+    </task>
+    <task id="LOCAL-00065" summary="add load_score func">
+      <created>1589475252514</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1589475252514</updated>
+    </task>
+    <task id="LOCAL-00066" summary="fix LoadScore.py">
+      <created>1589477123243</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1589477123243</updated>
+    </task>
+    <task id="LOCAL-00067" summary="fix LoadScore.py">
+      <created>1589477172417</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1589477172417</updated>
+    </task>
+    <task id="LOCAL-00068" summary="fix MainGame.py">
+      <created>1589477420178</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1589477420178</updated>
+    </task>
+    <task id="LOCAL-00069" summary="add chromedriver for linux">
+      <created>1589479068823</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1589479068823</updated>
+    </task>
+    <task id="LOCAL-00070" summary="fix LoadScore.py">
+      <created>1589482735881</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1589482735881</updated>
+    </task>
+    <task id="LOCAL-00071" summary="fix LoadScore.py">
+      <created>1589482773073</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1589482773073</updated>
+    </task>
+    <task id="LOCAL-00072" summary="fix LoadScore.py">
+      <created>1589483262249</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1589483262249</updated>
+    </task>
+    <task id="LOCAL-00073" summary="fix all files">
+      <created>1589487025780</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1589487025781</updated>
+    </task>
+    <task id="LOCAL-00074" summary="add test_answers.txt">
+      <created>1589487907462</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1589487907462</updated>
+    </task>
+    <task id="LOCAL-00075" summary="fix Live.py">
+      <created>1589487963283</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1589487963283</updated>
+    </task>
+    <task id="LOCAL-00076" summary="change Jenkinsfile">
+      <created>1589488076687</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1589488076687</updated>
+    </task>
+    <task id="LOCAL-00077" summary="change Jenkinsfile">
+      <created>1589489108617</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1589489108617</updated>
+    </task>
+    <task id="LOCAL-00078" summary="change Jenkinsfile">
+      <created>1589489303622</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1589489303622</updated>
+    </task>
+    <task id="LOCAL-00079" summary="add runTests.sh">
+      <created>1589491289282</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1589491289282</updated>
+    </task>
+    <task id="LOCAL-00080" summary="fix Jenkinsfile">
+      <created>1589491363182</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1589491363182</updated>
+    </task>
+    <task id="LOCAL-00081" summary="fix Jenkinsfile">
+      <created>1589491727077</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1589491727077</updated>
+    </task>
+    <task id="LOCAL-00082" summary="change runTests.sh">
+      <created>1589492363260</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1589492363260</updated>
+    </task>
+    <task id="LOCAL-00083" summary="change runTests.sh">
+      <created>1589492833138</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1589492833138</updated>
+    </task>
+    <task id="LOCAL-00084" summary="change runTests.sh">
+      <created>1589493006685</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1589493006685</updated>
+    </task>
+    <task id="LOCAL-00085" summary="change Jenkinsfile">
+      <created>1589493959826</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1589493959826</updated>
+    </task>
+    <task id="LOCAL-00086" summary="change Jenkinsfile">
+      <created>1589494227508</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1589494227508</updated>
+    </task>
+    <task id="LOCAL-00087" summary="change Jenkinsfile">
+      <created>1589494244021</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1589494244021</updated>
+    </task>
+    <task id="LOCAL-00088" summary="change Jenkinsfile">
+      <created>1589494907393</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1589494907393</updated>
+    </task>
+    <task id="LOCAL-00089" summary="add pip install setuptools Utils.py">
+      <created>1589495160218</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1589495160218</updated>
+    </task>
+    <task id="LOCAL-00090" summary="add install setuptools in Dockerfile">
+      <created>1589495293125</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1589495293125</updated>
+    </task>
+    <task id="LOCAL-00091" summary="add install setuptools in Dockerfile">
+      <created>1589495463268</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1589495463268</updated>
+    </task>
+    <task id="LOCAL-00092" summary="change run-docker.sh">
+      <created>1589719904689</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1589719904689</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -555,32 +541,32 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix MainGame.py" />
-    <MESSAGE value="fix MainGame.py and create webServer.py" />
-    <MESSAGE value="fix .gitignore" />
-    <MESSAGE value="." />
-    <MESSAGE value="adding gameTime" />
-    <MESSAGE value="fix htmls and css" />
-    <MESSAGE value="move data.json to folder" />
-    <MESSAGE value="add install_packages in Utils.py" />
-    <MESSAGE value="delete requirements.txt" />
-    <MESSAGE value="add README.md" />
-    <MESSAGE value="changing flask1.py" />
-    <MESSAGE value="changing webServer.py" />
-    <MESSAGE value="changing .gitignore" />
-    <MESSAGE value="add Dockerfile" />
-    <MESSAGE value="clear data.json" />
     <MESSAGE value="change .gitignore" />
     <MESSAGE value="fix webServer.py" />
     <MESSAGE value="change docker-compose.yml" />
     <MESSAGE value="change Dockerfile" />
     <MESSAGE value="rename and change run-docker.sh" />
     <MESSAGE value="change webServer.py" />
-    <MESSAGE value="change Jenkinsfile" />
     <MESSAGE value="change copyproj.sh" />
     <MESSAGE value="adding LoadScore.py" />
     <MESSAGE value="change MainGame.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="change MainGame.py" />
+    <MESSAGE value="change Utils.py" />
+    <MESSAGE value="change chromedriver.exe" />
+    <MESSAGE value="add load_score func" />
+    <MESSAGE value="fix MainGame.py" />
+    <MESSAGE value="add chromedriver for linux" />
+    <MESSAGE value="fix LoadScore.py" />
+    <MESSAGE value="fix all files" />
+    <MESSAGE value="add test_answers.txt" />
+    <MESSAGE value="fix Live.py" />
+    <MESSAGE value="add runTests.sh" />
+    <MESSAGE value="fix Jenkinsfile" />
+    <MESSAGE value="change runTests.sh" />
+    <MESSAGE value="change Jenkinsfile" />
+    <MESSAGE value="add pip install setuptools Utils.py" />
+    <MESSAGE value="add install setuptools in Dockerfile" />
+    <MESSAGE value="change run-docker.sh" />
+    <option name="LAST_COMMIT_MESSAGE" value="change run-docker.sh" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -592,12 +578,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588504303816" />
-    <state x="637" y="101" key="CommitChangelistDialog2" timestamp="1589474540042">
+    <state x="637" y="101" key="CommitChangelistDialog2" timestamp="1589719903586">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="637" y="101" key="CommitChangelistDialog2/-1920.-4.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588532409832" />
     <state x="510" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589317725692" />
-    <state x="637" y="101" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589474540042" />
+    <state x="637" y="101" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589719903586" />
     <state x="262" y="133" key="DiffContextDialog" timestamp="1589369551575">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -607,30 +593,30 @@
     </state>
     <state x="690" y="223" key="FileChooserDialogImpl/-1920.-4.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588540930920" />
     <state x="690" y="223" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589473977135" />
-    <state width="1895" height="380" key="GridCell.Tab.0.bottom" timestamp="1589474433516">
+    <state width="1895" height="241" key="GridCell.Tab.0.bottom" timestamp="1589489472504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1895" height="380" key="GridCell.Tab.0.bottom/-1920.-4.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588540987052" />
     <state width="1893" height="333" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583045144351" />
-    <state width="1895" height="380" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589474433516" />
-    <state width="1895" height="380" key="GridCell.Tab.0.center" timestamp="1589474433516">
+    <state width="1895" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589489472504" />
+    <state width="1895" height="241" key="GridCell.Tab.0.center" timestamp="1589489472504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1895" height="380" key="GridCell.Tab.0.center/-1920.-4.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588540987052" />
     <state width="1893" height="333" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583045144351" />
-    <state width="1895" height="380" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589474433516" />
-    <state width="1895" height="380" key="GridCell.Tab.0.left" timestamp="1589474433516">
+    <state width="1895" height="241" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589489472504" />
+    <state width="1895" height="241" key="GridCell.Tab.0.left" timestamp="1589489472503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1895" height="380" key="GridCell.Tab.0.left/-1920.-4.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588540987052" />
     <state width="1893" height="333" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583045144351" />
-    <state width="1895" height="380" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589474433516" />
-    <state width="1895" height="380" key="GridCell.Tab.0.right" timestamp="1589474433516">
+    <state width="1895" height="241" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589489472503" />
+    <state width="1895" height="241" key="GridCell.Tab.0.right" timestamp="1589489472504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1895" height="380" key="GridCell.Tab.0.right/-1920.-4.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588540987052" />
     <state width="1893" height="333" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583045144351" />
-    <state width="1895" height="380" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589474433516" />
+    <state width="1895" height="241" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589489472504" />
     <state width="1895" height="335" key="GridCell.Tab.1.bottom" timestamp="1588671355004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -663,15 +649,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="157" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588672296026" />
-    <state x="452" y="178" key="Vcs.Push.Dialog.v2" timestamp="1589474544110">
+    <state x="452" y="178" key="Vcs.Push.Dialog.v2" timestamp="1589719936527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="362" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589317736416" />
-    <state x="452" y="178" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589474544110" />
-    <state x="741" y="421" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589473556001">
+    <state x="452" y="178" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589719936527" />
+    <state x="741" y="421" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589721035153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="741" y="421" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589473556001" />
+    <state x="741" y="421" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589721035153" />
     <state x="438" y="200" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1582633623573">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

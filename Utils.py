@@ -23,6 +23,13 @@ def get_operation_system():
     opr = sys.platform
     return opr
 
+def get_host_ip():
+    import socket
+    hostname = socket.gethostname()
+    IPAddr = socket.gethostbyname(hostname)
+    print("Your Computer Name is:" + hostname)
+    print("Your Computer IP Address is:" + IPAddr)
+
 
 ## -----------------------------------------------------##
 
