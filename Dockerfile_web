@@ -1,5 +1,4 @@
-FROM mosheb3/wog:latest
-# FROM python:3
+FROM python:3
 # FROM python:3.7-alpine
 
 WORKDIR /app
