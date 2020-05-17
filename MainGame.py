@@ -24,7 +24,7 @@ num_of_games = len(games_name)
 
 gamer_name = get_gamer_name()
 
-get_host_ip()
+host_ip = get_host_ip()
 
 while True:
     which_game2play = load_game(num_of_games)
@@ -69,7 +69,7 @@ while True:
     if (ynq.lower() == 'n'):
         opr = get_operation_system()
         if (opr.lower() == "linux"):
-           print("You can see your score at http://localhost:8081")
+           print("You can see your score at http://{h_ip}:8081".format(h_ip=host_ip))
         else:
            load_score_in_broser()
         exit()
