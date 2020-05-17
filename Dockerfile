@@ -5,8 +5,8 @@ WORKDIR /app
 
 COPY . /app
 
-RUN pip install python-exchangeratesapi
-RUN pip install selenium
-RUN pip install --upgrade setuptools
+RUN pip3 install python-exchangeratesapi
+RUN pip3 install selenium
+RUN pip3 install --upgrade setuptools
 
 CMD ["python3", "MainGame.py"]
