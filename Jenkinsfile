@@ -31,36 +31,41 @@ pipeline {
       }
 
       stage('Building image') {
-         steps{
+         steps {
             script {
                if ("${params.BUILD_OPS}" == "YES") {
                   dockerImage = docker.build registry + ":$BUILD_NUMBER"
                   dockerImage_web = docker.build registry_web + ":$BUILD_NUMBER"
                }
                else {
-                  echo "No need to build new version."
+                  echo "Build image cancel by user"
                }
             }
          }
       }
 
       stage('Running WebServer') {
-         steps{
+         steps {
             echo 'Running WebServer ..'
             script{
-                dockerImage_web.inside {
-                   sh('chmod +x ./runWebServer.sh')
-                   sh('./runWebServer.sh')
-                   echo "Run Tests .."
-                   sh('chmod +x ./runTests.sh')
-                   def test_res = sh(script: "./runTests.sh", returnStdout: true).trim() as String
-                   echo("res = ${test_res}")
+               if ("${params.BUILD_OPS}" == "YES") {
+                  dockerImage_web.inside {
+                     sh('chmod +x ./runWebServer.sh')
+                     sh('./runWebServer.sh')
+                     echo "Run Tests .."
+                     sh('chmod +x ./runTests.sh')
+                     def test_res = sh(script: "./runTests.sh", returnStdout: true).trim() as String
+                     echo("res = ${test_res}")
 
-                   //script {
-                   //   def disk_size = sh(script: "df / --output=avail | tail -1", returnStdout: true).trim() as Integer
-                   //   println("disk_size = ${disk_size}")
-                   //}
-                }
+                     //script {
+                     //   def disk_size = sh(script: "df / --output=avail | tail -1", returnStdout: true).trim() as Integer
+                     //   println("disk_size = ${disk_size}")
+                     //}
+                  }
+               }
+               else {
+                  echo "Can't run webserver, build image cancel by user"
+               }
             }
          }
       }
