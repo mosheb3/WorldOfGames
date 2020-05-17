@@ -69,20 +69,12 @@ pipeline {
                    sh('./runWebServer.sh')
                    echo "Run Tests .."
                    sh('chmod +x ./runTests.sh')
-                   sh('./runTests.sh')
+                   def test_res = sh('./runTests.sh')
+                   echo "res="+${test_res}
                 }
             }
          }
       }
-
-      /*stage('Running Game4Testing') {
-         steps{
-            echo 'Running..'
-            //sh('python3 MainGame.py < test_answers.txt')
-            sh('chmod +x ./runTests.sh')
-            sh('./runTests.sh')
-         }
-      }*/
 
       stage('Deploy Image') {
          steps{
