@@ -69,7 +69,7 @@ pipeline {
                    sh('./runWebServer.sh')
                    echo "Run Tests .."
                    sh('chmod +x ./runTests.sh')
-                   def test_res = sh(script: "./runTests.sh", returnStdout: true).trim() as string
+                   def test_res = sh(script: "./runTests.sh", returnStdout: true).trim() as String
                    echo("res = ${test_res}")
 
                    //script {
