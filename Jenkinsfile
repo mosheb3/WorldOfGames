@@ -14,6 +14,7 @@ pipeline {
        registryCredential = 'docker_hub_cred'
        dockerImage = ''
        dockerImage_web = ''
+       ext_dockerfile_web = 'Dockerfile.web'
    }
 
    parameters {
@@ -35,7 +36,8 @@ pipeline {
             script {
                if ("${params.BUILD_OPS}" == "YES") {
                   dockerImage = docker.build registry + ":$BUILD_NUMBER"
-                  dockerImage_web = docker.build registry_web + ":$BUILD_NUMBER"
+                  dockerImage_web = docker.build(registry:$BUILD_NUMBER, "-f ${ext_dockerfile_web}")
+                  //dockerImage_web = docker.build registry_web + ":$BUILD_NUMBER"
                }
                else {
                   echo "Build image cancel by user"
