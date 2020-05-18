@@ -11,75 +11,76 @@ pipeline {
        BUILD_NUMBER="latest"
        registry = "mosheb3/wog"
        registry_web = "mosheb3/wog-web"
-       registryCredential = 'dockerHub'
+       registryCredential = 'docker_hub_cred'
        dockerImage = ''
        dockerImage_web = ''
+       ext_dockerfile_web = 'Dockerfile.web'
    }
 
    parameters {
       string(name: "MAIL_TO", defaultValue: "mosheb3@gmail.com")
       string(name: "WORK_DIR", defaultValue: "/srv/projects/WorldOfGames")
-      choice(name: 'BUILD_OPS', choices: "NO\nYES", description: '')
+      choice(name: 'BUILD_OPS', choices: "NO\nYES", description: 'Building image options')
    }
 
    stages {
       stage('Cloning From GitHub') {
          steps {
             echo 'Cloning App ..'
-            git 'https://github.com/mosheb3/WorldOfGames'
+            git branch: 'master', url: 'https://github.com/mosheb3/WorldOfGames'
          }
       }
 
       stage('Building image') {
-         steps{
+         steps {
             script {
                if ("${params.BUILD_OPS}" == "YES") {
                   dockerImage = docker.build registry + ":$BUILD_NUMBER"
-                  dockerImage_web = docker.build registry_web + ":$BUILD_NUMBER"
+                  dockerImage_web = docker.build(registry + ":$BUILD_NUMBER", "-f ${ext_dockerfile_web}")
+                  //dockerImage_web = docker.build registry_web + ":$BUILD_NUMBER"
                }
                else {
-                  echo "No need to build new version."
+                  echo "Build image cancel by user"
                }
             }
          }
       }
-
-      /*stage('Building image') {
-         steps{
-            script {
-               if ("${params.BUILD_OPS}" == "YES") {
-                  echo 'Building App Image..'
-                  sh('docker build -t mosheb3/wog:latest .')
-                  echo 'Building WebServer Image..'
-                  sh('docker build -f Dockerfile_web -t mosheb3/wog-web:latest .')
-               }
-            }
-         }
-      }*/
 
       stage('Running WebServer') {
-         steps{
-            echo 'Running..'
-            sh('chmod +x ./runWebServer.sh')
-            sh('./runWebServer.sh')
+         steps {
+            echo 'Running WebServer ..'
+            script{
+               if ("${params.BUILD_OPS}" == "YES") {
+                  dockerImage_web.inside {
+                     sh('chmod +x ./runWebServer.sh')
+                     sh('./runWebServer.sh')
+                     echo "Run Tests .."
+                     sh('chmod +x ./runTests.sh')
+                     def test_res = sh(script: "./runTests.sh", returnStdout: true).trim() as String
+                     echo("res = ${test_res}")
+
+                     //script {
+                     //   def disk_size = sh(script: "df / --output=avail | tail -1", returnStdout: true).trim() as Integer
+                     //   println("disk_size = ${disk_size}")
+                     //}
+                  }
+               }
+               else {
+                  echo "Can't run webserver, build image cancel by user"
+               }
+
+               def nextjob=build job: 'WorldOfGames-Deploy-Remote'
+            }
          }
       }
 
-      stage('Running Game4Testing') {
-         steps{
-            echo 'Running..'
-            //sh('python3 MainGame.py < test_answers.txt')
-            sh('chmod +x ./runTests.sh')
-            sh('./runTests.sh')
-         }
-      }
-
-      stage('Deploy Image') {
+      /*stage('Deploy Image') {
          steps{
             script {
-               if ("${params.BUILD_OPS}" == "YES") {
+               if ("${params.DEPLOY_OPS}" == "YES") {
                   docker.withRegistry( '', registryCredential ) {
                      dockerImage.push()
+                     dockerImage_web.push()
                   }
                }
                else {
@@ -87,7 +88,7 @@ pipeline {
                }
             }
          }
-      }
+      }*/
    } //end stages
 /*   post {
       always {
