@@ -37,8 +37,8 @@ pipeline {
             script {
                if ("${params.BUILD_OPS}" == "YES") {
                   dockerImage = docker.build registry + ":$BUILD_NUMBER"
-                  //dockerImage_web = docker.build(registry + ":$BUILD_NUMBER", "-f '${ext_dockerfile_web}'")
-                  dockerImage_web = sh("docker build -f Dockerfile.web -t mosheb3/wog-web:latest .")
+                  dockerImage_web = docker.build("-f '${ext_dockerfile_web}'", registry_web + ":$BUILD_NUMBER")
+                  //dockerImage_web = sh("docker build -f Dockerfile.web -t mosheb3/wog-web:latest .")
                   //dockerImage_web = docker.build registry_web + ":$BUILD_NUMBER"
                }
                else {
