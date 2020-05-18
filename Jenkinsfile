@@ -70,7 +70,7 @@ pipeline {
                   echo "Can't run webserver, build image cancel by user"
                }
 
-               def nextjob=build job: 'WorldOfGames-Deploy-Remote'
+               def nextjob=build job: 'WorldOfGames_Deploy_Remote'
             }
          }
       }
