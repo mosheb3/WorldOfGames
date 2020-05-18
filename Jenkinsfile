@@ -2,6 +2,7 @@ pipeline {
    agent any
    options {
       timestamps()
+      buildDiscarder(logRotator(daysToKeepStr: '1',numToKeepStr: '1'))
    }
 
    environment {
@@ -36,7 +37,8 @@ pipeline {
             script {
                if ("${params.BUILD_OPS}" == "YES") {
                   dockerImage = docker.build registry + ":$BUILD_NUMBER"
-                  dockerImage_web = docker.build(registry + ":$BUILD_NUMBER", "-f ${ext_dockerfile_web}")
+                  dockerImage_web = docker.build(registry_web + ":$BUILD_NUMBER", " -f '${ext_dockerfile_web}' .")
+                  //dockerImage_web = sh("docker build -f Dockerfile.web -t mosheb3/wog-web:latest .")
                   //dockerImage_web = docker.build registry_web + ":$BUILD_NUMBER"
                }
                else {
@@ -69,7 +71,7 @@ pipeline {
                   echo "Can't run webserver, build image cancel by user"
                }
 
-               def nextjob=build job: 'WorldOfGames-Deploy-Remote'
+               def nextjob=build job: 'WorldOfGames_Deploy_Remote'
             }
          }
       }
