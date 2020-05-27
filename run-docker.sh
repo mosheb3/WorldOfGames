@@ -11,14 +11,8 @@ if [ "$1" == "build" ];then
       /sbin/sysctl -p
    fi
 
-   #docker build localy
-   docker build -f Dockerfile.web -t ${IMG_WEB}:latest .
    docker build -t ${IMG_APP}:latest .
-
-   ## docker push remote
-   docker push ${IMG_WEB}:latest
-   docker push ${IMG_APP}:latest
-
+   docker build -f Dockerfile.web -t ${IMG_WEB}:latest .
 elif [ "$1" == "run" ];then
    if [ "$(docker inspect -f '{{.State.Running}}' ${IMG_WEB_NAME} 2>/dev/null)" != "true" ]; then
       docker stop ${IMG_WEB_NAME}
@@ -27,5 +21,5 @@ elif [ "$1" == "run" ];then
 
    docker run -it --rm --name ${IMG_APP_NAME} -v $(pwd):/app ${IMG_APP}:latest
 else
-   echo "Usage: run / bulid (and push)"
+   echo "Usage: run / bulid"
 fi
