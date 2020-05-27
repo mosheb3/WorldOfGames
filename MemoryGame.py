@@ -1,6 +1,10 @@
 ## Moshe Barazani
 ## Date: 25-02-2020
 from Utils import *
+import curses
+import os
+
+os.system("py -m pip3 install curses")
 
 def generate_sequence(difficulty):
     import random
@@ -15,17 +19,24 @@ def start_up(difficulty):
     import time
 
     sec = difficulty
-    while(sec > 0):
+    while (sec > 0):
         print(sec)
         sec -= 1
         time.sleep(1)
     print(" GO GO GO ")
     time.sleep(1)
-    cls()
+    clear()
 
 
 def cls():
     print('\n' * 25000)
+
+
+def clear():
+    curses.setupterm()
+    e3 = curses.tigetstr('E3') or b''
+    clear_screen_seq = curses.tigetstr('clear') or b''
+    os.write(sys.stdout.fileno(), e3 + clear_screen_seq)
 
 
 def get_list_from_user(difficulty):
@@ -33,9 +44,9 @@ def get_list_from_user(difficulty):
     print("Did you remember the numbers? ")
 
     for i in range(difficulty):
-        user_nums = input("Enter number {n}: ".format(n=i+1))
+        user_nums = input("Enter number {n}: ".format(n=i + 1))
         user_nums_list.append(int(user_nums))
-    #print(user_nums_list)
+    # print(user_nums_list)
     return user_nums_list
 
 
