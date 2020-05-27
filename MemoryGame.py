@@ -4,8 +4,6 @@ from Utils import *
 import curses
 import os
 
-os.system("py -m pip3 install curses")
-
 def generate_sequence(difficulty):
     import random
 
