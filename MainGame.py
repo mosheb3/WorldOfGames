@@ -4,7 +4,7 @@
 ## pip install -r data/requirements.txt
 
 from Live import *
-from Utils import *
+import Utils
 from GuessGame import guess_num
 from MemoryGame import play_memory_game
 from CurrencyRouletteGame import play_currency_roulette
@@ -70,5 +70,7 @@ while True:
         if (opr.lower() == "linux"):
            print("You can see your score at http://{h_ip}:8081".format(h_ip=host_ip))
         else:
-           load_score_in_broser()
+           open_browser = input('Open Browser? (Y/N) << ').lower()
+           if(open_browser == 'y'):
+              load_score_in_broser()
         exit()

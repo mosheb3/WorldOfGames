@@ -2,8 +2,11 @@
 ## Date: 04-02-2020
 
 def play_seven_boom():
-    num = int(input("Enter Number: "))
-    for x in range(num):
+    num = input("Enter Number: ")
+    while not num.isdigit():
+        num = input("Enter Number: ")
+
+    for x in range(int(num)):
         x+=1
         if not (x % 7):
             print("BOOM!")
