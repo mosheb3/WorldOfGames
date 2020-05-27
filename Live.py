@@ -9,7 +9,7 @@ def get_gamer_name():
 
 
 def load_game(num_of_games):
-    print("Please choose a game to play:\n \
+    print(bright_green + "Please choose a game to play:\n \
    1. Memory Game - a sequence of numbers will appear for 1 second and you have to guess it back\n \
    2. Guess Game - guess a number and see if you chose like the computer\n \
    3. Currency Roulette - try and guess the value of a random amount of USD in ILS\n \
