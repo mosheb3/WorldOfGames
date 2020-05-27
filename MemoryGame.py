@@ -31,6 +31,7 @@ def cls():
 
 
 def clear():
+    print('\n' * 2500)
     curses.setupterm()
     e3 = curses.tigetstr('E3') or b''
     clear_screen_seq = curses.tigetstr('clear') or b''
