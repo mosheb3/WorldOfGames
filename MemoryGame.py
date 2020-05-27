@@ -44,6 +44,9 @@ def get_list_from_user(difficulty):
 
     for i in range(difficulty):
         user_nums = input("Enter number {n}: ".format(n=i + 1))
+        while not user_nums.isdigit():
+            user_nums = input("Enter number {n}: ".format(n=i + 1))
+
         user_nums_list.append(int(user_nums))
     # print(user_nums_list)
     return user_nums_list

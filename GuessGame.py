@@ -9,12 +9,15 @@ def generate_number(difficulty):
 
 def get_guess_from_user(difficulty):
     user_guess = input("Please, guess a number between 1 and {df}: ".format(df=difficulty))
+    while not user_guess.isdigit():
+       user_guess = input("Please, guess a number between 1 and {df}: ".format(df=difficulty))
+
     return user_guess
 
 def guess_num(difficulty):
     user_guess = int(get_guess_from_user(difficulty))
     if (user_guess == 1 and difficulty == 1):
-        print("Ohh Really?!")
+        print("Ohh Really?! Is't too simple!")
         exit()
     else:
         computer_num = generate_number(difficulty)

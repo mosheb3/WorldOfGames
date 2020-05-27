@@ -11,6 +11,8 @@ def play_currency_roulette(difficulty):
 
 def get_guess_from_user():
     user_guess = input("Please, guess a number between 1 and 100: ")
+    while not user_guess.isdigit():
+        user_guess = input("Please, guess a number between 1 and 100: ")
     return int(user_guess)
 
 

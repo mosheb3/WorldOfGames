@@ -33,8 +33,12 @@ def get_game_difficulty(game_name, num_of_difficulties):
     num_of_difficulties_list = create_list(num_of_difficulties)
     game_difficulty = input("Please choose game difficulty for \"{gn}\" from 1 to 5: ".format(gn=game_name))
 
+    while not game_difficulty.isdigit():
+        game_difficulty = input("Please choose game difficulty for \"{gn}\" from 1 to 5: ".format(gn=game_name))
+
     while (int(game_difficulty) not in num_of_difficulties_list):
         game_difficulty = input("Choose game difficulty (1-" + str(num_of_difficulties) + "): ")
+
     return int(game_difficulty)
 
 
