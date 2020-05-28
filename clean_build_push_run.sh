@@ -9,4 +9,4 @@ docker image rm mosheb3/wog-web mosheb3/wog
 docker push mosheb3/wog:latest
 docker push mosheb3/wog-web:latest
 
-docker-compose up -d
+docker-compose up -d wog-web
