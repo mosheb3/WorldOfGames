@@ -1,4 +1,6 @@
 #!/bin/bash
 
-echo "loading Game ..."
-python3 /app/MainGame.py
+## run game
+docker-compose stop && docker-compose rm -f
+docker-compose up -d wog-web
+docker-compose run wog
