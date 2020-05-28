@@ -13,6 +13,6 @@ services:
   wog:
     image: mosheb3/wog
     volumes:
-      - "./data:/app/data:ro"
+      - "./data:/app/data:rw"
     container_name: wog
     #entrypoint: ["/app/runGame.sh"]
