@@ -3,7 +3,7 @@ version: "3"
 services:
   wog-web:
     image: mosheb3/wog-web
-    restart: unless-stoped
+    restart: unless-stopped
     volumes:
       - "./data:/app/data:ro"
     ports:
