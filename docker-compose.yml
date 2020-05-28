@@ -5,13 +5,14 @@ services:
     image: mosheb3/wog-web
     restart: always
     volumes:
-      - "./logs:/app/logs:ro"
       - "./data:/app/data:ro"
     ports:
       - "8081:8081"
     container_name: wog-web
+    entrypoint: ["./runWebServer.sh"] 
   wog:
     image: mosheb3/wog
-    depends_on:
-      - wog-web
+    volumes:
+      - "./data:/app/data:ro"
     container_name: wog
+    entrypoint: ["python3 /app/MainGame.py"]
