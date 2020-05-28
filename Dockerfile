@@ -11,4 +11,4 @@ RUN pip3 install --upgrade setuptools
 
 RUN chmod 744 *.py *.sh
 
-CMD ["python3", "/app/MainGame.py"]
+ENTRYPOINT ["/bin/bash", "-c", "/app/runGame.sh"]

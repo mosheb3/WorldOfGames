@@ -3,7 +3,7 @@ version: "3"
 services:
   wog-web:
     image: mosheb3/wog-web
-    restart: always
+    #restart: always
     volumes:
       - "./data:/app/data:ro"
     ports:
@@ -11,10 +11,10 @@ services:
     container_name: wog-web
     deploy:
       replicas: 1
-    entrypoint: ["python3 /app/webServer.py"]
+    #entrypoint: ["python3 /app/webServer.py"]
   wog:
     image: mosheb3/wog
     volumes:
       - "./data:/app/data:ro"
     container_name: wog
-    entrypoint: ["/app/runGame.sh"]
+    #entrypoint: ["/app/runGame.sh"]
