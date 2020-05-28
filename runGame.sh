@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo "loading Game..."
+echo "loading Game ..."
 python3 MainGame.py

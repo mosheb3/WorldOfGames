@@ -16,10 +16,10 @@ if [ "$1" == "build" ];then
 elif [ "$1" == "run" ];then
    if [ "$(docker inspect -f '{{.State.Running}}' ${IMG_WEB_NAME} 2>/dev/null)" != "true" ]; then
       docker stop ${IMG_WEB_NAME}
-      docker run --rm -d -p 8081:8081 --name ${IMG_WEB_NAME} -v $(pwd):/app ${IMG_WEB}:latest
+      docker run --rm -d -p 8081:8081 --name ${IMG_WEB_NAME} -v $(pwd)/data:/app/data ${IMG_WEB}:latest
    fi
 
-   docker run -it --rm --name ${IMG_APP_NAME} -v $(pwd):/app ${IMG_APP}:latest
+   docker run -it --rm --name ${IMG_APP_NAME} -v $(pwd)/data:/app/data ${IMG_APP}:latest
 else
    echo "Usage: run / build"
 fi
