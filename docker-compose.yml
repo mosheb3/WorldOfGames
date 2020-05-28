@@ -9,7 +9,9 @@ services:
     ports:
       - "8081:8081"
     container_name: wog-web
-    entrypoint: ["/app/runWebServer.sh"]
+    deploy:
+      replicas: 1
+    entrypoint: ["python3 /app/webServer.py"]
   wog:
     image: mosheb3/wog
     volumes:
