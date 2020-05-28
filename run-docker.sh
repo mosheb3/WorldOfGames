@@ -21,5 +21,5 @@ elif [ "$1" == "run" ];then
 
    docker run -it --rm --name ${IMG_APP_NAME} -v $(pwd):/app ${IMG_APP}:latest
 else
-   echo "Usage: run / bulid"
+   echo "Usage: run / build"
 fi
