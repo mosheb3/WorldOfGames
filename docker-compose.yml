@@ -9,10 +9,10 @@ services:
     ports:
       - "8081:8081"
     container_name: wog-web
-    entrypoint: ["./runWebServer.sh"] 
+    entrypoint: ["/app/runWebServer.sh"]
   wog:
     image: mosheb3/wog
     volumes:
       - "./data:/app/data:ro"
     container_name: wog
-    entrypoint: ["./runGame.sh"]
+    entrypoint: ["/app/runGame.sh"]

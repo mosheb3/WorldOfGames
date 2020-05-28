@@ -8,6 +8,8 @@ RUN python3 -m pip install --upgrade pip
 
 RUN pip3 install Flask
 
+RUN chmod 744 *.py *.sh
+
 EXPOSE 8081
 
 CMD ["python3", "/app/webServer.py"]

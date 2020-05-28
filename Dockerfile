@@ -9,4 +9,6 @@ RUN pip3 install python-exchangeratesapi
 RUN pip3 install selenium
 RUN pip3 install --upgrade setuptools
 
+RUN chmod 744 *.py *.sh
+
 CMD ["python3", "/app/MainGame.py"]
