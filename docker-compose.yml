@@ -15,4 +15,4 @@ services:
     volumes:
       - "./data:/app/data:ro"
     container_name: wog
-    entrypoint: ["python3 /app/MainGame.py"]
+    entrypoint: ["./runGame.sh"]
