@@ -54,7 +54,7 @@ pipeline {
          steps {
             script{
                if ("${params.TEST_OPS}" == "YES") {
-                  dockerImage_web.inside {
+                  //dockerImage_web.inside {
                      sh('chmod 744 *.py *.sh')
                      //sh('./runGame.sh')
                      echo "Run Tests ..."
@@ -66,7 +66,7 @@ pipeline {
                      //   def disk_size = sh(script: "df / --output=avail | tail -1", returnStdout: true).trim() as Integer
                      //   println("disk_size = ${disk_size}")
                      //}
-                  } //end dockerImage_web.inside
+                  //} //end dockerImage_web.inside
                }
                else {
                   echo "Tests image cancel by user"
