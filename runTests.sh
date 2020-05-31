@@ -1,4 +1,7 @@
 #!/bin/bash
+echo "loading webServer ..."
+nohup python3 webServer.py  >> webServer.log &
+
 python3 MainGame.py < test_answers.txt
 
 grep "test123" data/data.json
