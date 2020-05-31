@@ -22,6 +22,8 @@ pipeline {
       string(name: "MAIL_TO", defaultValue: "mosheb3@gmail.com")
       string(name: "WORK_DIR", defaultValue: "/srv/projects/WorldOfGames")
       choice(name: 'BUILD_OPS', choices: "NO\nYES", description: 'Building image options')
+      choice(name: 'TEST_OPS', choices: "NO\nYES", description: 'Tesing image options')
+      choice(name: 'PUBLISH_OPS', choices: "NO\nYES", description: 'Publish image options')
    }
 
    stages {
@@ -48,11 +50,10 @@ pipeline {
          }
       }
 
-      stage('Running WebServer') {
+      stage('Running Tests') {
          steps {
-            echo 'Running WebServer ..'
             script{
-               if ("${params.BUILD_OPS}" == "YES") {
+               if ("${params.TEST_OPS}" == "YES") {
                   dockerImage_web.inside {
                      sh('chmod 744 *.py *.sh')
                      //sh('./runGame.sh')
@@ -68,10 +69,15 @@ pipeline {
                   } //end dockerImage_web.inside
                }
                else {
-                  echo "Can't run webserver, build image cancel by user"
+                  echo "Tests image cancel by user"
                }
 
-               def nextjob=build job: 'WorldOfGames_Deploy_Remote'
+               if ("${params.PUBLISH_OPS}" == "YES") {
+                  def nextjob=build job: 'WorldOfGames_Deploy_Remote'
+               }
+               else {
+                  echo "Publish image cancel by user"
+               }
             }
          }
       }
