@@ -54,10 +54,10 @@ pipeline {
             script{
                if ("${params.BUILD_OPS}" == "YES") {
                   dockerImage_web.inside {
-                     sh('chmod +x ./runWebServer.sh')
-                     sh('./runWebServer.sh')
+                     sh('chmod 744 *.py *.sh')
+                     sh('./runGame.sh')
                      echo "Run Tests .."
-                     sh('chmod +x ./runTests.sh')
+                     //sh('chmod +x ./runTests.sh')
                      def test_res = sh(script: "./runTests.sh", returnStdout: true).trim() as String
                      echo("res = ${test_res}")
 
