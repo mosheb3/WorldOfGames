@@ -71,7 +71,13 @@ pipeline {
                else {
                   echo "Tests image cancel by user"
                }
+            }
+         }
+      }
 
+      stage('Push Image') {
+         steps {
+            script{
                if ("${params.PUBLISH_OPS}" == "YES") {
                   def nextjob=build job: 'WorldOfGames_Deploy_Remote'
                }
