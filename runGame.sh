@@ -2,7 +2,7 @@
 
 ## run game
 service_name="wog-web"
-docker_compose_dir="/usr/local/bin/docker-compose"
+docker_compose_dir="/usr/local/bin"
 
 if [ -z `docker-compose ps -q $service_name` ] || [ -z `docker ps -q --no-trunc | grep $(docker-compose ps -q $service_name)` ]; then
    $docker_compose_dir/docker-compose stop && $docker_compose_dir/docker-compose rm -f
