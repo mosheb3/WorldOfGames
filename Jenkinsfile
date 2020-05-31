@@ -53,7 +53,7 @@ pipeline {
             echo 'Running WebServer ..'
             script{
                if ("${params.BUILD_OPS}" == "YES") {
-                  dockerImage_web.inside {
+                  //dockerImage_web.inside {
                      sh('chmod 744 *.py *.sh')
                      sh('./runGame.sh')
                      echo "Run Tests .."
@@ -65,7 +65,7 @@ pipeline {
                      //   def disk_size = sh(script: "df / --output=avail | tail -1", returnStdout: true).trim() as Integer
                      //   println("disk_size = ${disk_size}")
                      //}
-                  }
+                  //} //end dockerImage_web.inside
                }
                else {
                   echo "Can't run webserver, build image cancel by user"
