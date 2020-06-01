@@ -11,3 +11,57 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 1030, in run_simple
     s.bind(server_address)
 OSError: [Errno 98] Address already in use
+ * Serving Flask app "webServer" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:8081/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 722-536-054
+127.0.0.1 - - [31/May/2020 23:19:27] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:19:27] "[37mGET /static/css/style.css HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:37:42] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:37:43] "[37mGET /static/css/style.css HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:37:44] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:37:44] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:37:45] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:37:45] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:38:25] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:40:01] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:40:02] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:40:03] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:40:03] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:40:04] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:40:04] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:40:04] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:40:05] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:40:05] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:40:05] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:40:06] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:40:06] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:40:12] "[37mGET / HTTP/1.0[0m" 200 -
+ * Serving Flask app "webServer" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "webServer.py", line 25, in <module>
+    app.run('0.0.0.0', '8081', debug=True)
+  File "/usr/local/lib64/python3.6/site-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python3.6/site-packages/werkzeug/serving.py", line 1030, in run_simple
+    s.bind(server_address)
+OSError: [Errno 98] Address already in use
+127.0.0.1 - - [31/May/2020 23:40:32] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:53:09] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:53:10] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:53:10] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:53:10] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:53:11] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [31/May/2020 23:53:11] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [01/Jun/2020 18:31:11] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [01/Jun/2020 18:31:12] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+127.0.0.1 - - [01/Jun/2020 18:31:12] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
